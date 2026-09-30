@@ -1,18 +1,24 @@
 # Healthy Gaming Habits
 
-Healthy Gaming Habits is an advocacy website created for the COMP 2051 Web Development Client-Side (Front-End) final project.
+Healthy Gaming Habits es una página web de concienciación creada como proyecto final para el curso COMP 2051 Desarrollo Web Lado-Cliente (Front-End).
 
-The purpose of this website is to educate teenagers and young adults about maintaining a healthy balance between gaming and other important activities such as school, sleep, exercise, family, and daily responsibilities.
+El propósito de esta página es educar a adolescentes y jóvenes adultos sobre la importancia de mantener un balance saludable entre los videojuegos y otras actividades importantes como los estudios, el sueño, el ejercicio, la familia y las responsabilidades diarias.
 
-## The website will include:
+## La página incluirá:
 
-- Information about healthy gaming habits
-- Signs of poor gaming balance
-- Tips for managing gaming time
-- A Healthy Gaming Challenge
-- Reliable resources
-- A call to action to create a personal healthy gaming plan
+- Información sobre hábitos saludables al jugar videojuegos.
+- Señales que pueden indicar una falta de balance.
+- Consejos para organizar mejor el tiempo de juego.
+- Un reto llamado Healthy Gaming Challenge.
+- Recursos y fuentes confiables.
+- Un llamado a la acción para crear un plan personal de hábitos saludables.
 
-**Student:** Fernando J. Juliá Hernández
+## Mensaje principal
 
-**Course:** COMP 2051 - Web Development Client-Side (Front-End)
+**Juega. Disfruta. Mantén el balance.**
+
+La idea de este proyecto no es decir que los videojuegos son malos. El objetivo es promover una forma más balanceada y responsable de disfrutarlos.
+
+**Estudiante:** Fernando J. Juliá Hernández
+
+**Curso:** COMP 2051 - Desarrollo Web Lado-Cliente (Front-End)
