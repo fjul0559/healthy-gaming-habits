@@ -21,4 +21,4 @@ La idea de este proyecto no es decir que los videojuegos son malos. El objetivo 
 
 **Estudiante:** Fernando J. Juliá Hernández
 
-**Curso:** COMP 2051 - Desarrollo Web Lado-Cliente (Front-End)
+**Curso:** COMP 2051 - Web Develop Client-Side (Front-End)
