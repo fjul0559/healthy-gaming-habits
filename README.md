@@ -1,6 +1,6 @@
 # Healthy Gaming Habits
 
-Healthy Gaming Habits es una página web de concienciación creada como proyecto final para el curso COMP 2051 Desarrollo Web Lado-Cliente (Front-End).
+Healthy Gaming Habits es una página web de concienciación creada como proyecto final para el curso COMP 2051  Web Develop Client-Side (Front-End).
 
 El propósito de esta página es educar a adolescentes y jóvenes adultos sobre la importancia de mantener un balance saludable entre los videojuegos y otras actividades importantes como los estudios, el sueño, el ejercicio, la familia y las responsabilidades diarias.
 
