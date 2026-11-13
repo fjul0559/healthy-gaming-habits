@@ -1,196 +1,388 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-        content="Healthy Gaming Habits promueve
-        hábitos saludables para disfrutar los
-        videojuegos con balance.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consejos para disfrutar de los videojuegos manteniendo hábitos saludables.">
   <title>Healthy Gaming Habits | Inicio</title>
-
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js" defer></script>
+
+  <style>
+    :root {
+      --fondo: #10182d;
+      --tarjeta: #202c54;
+      --turquesa: #67f1dc;
+      --violeta: #9373ff;
+      --texto: #f5f7ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111b34, #283665);
+      text-align: center;
+      padding: 45px 20px 30px;
+      border-bottom: 3px solid var(--turquesa);
+    }
+
+    header h1 {
+      color: var(--turquesa);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin: 0;
+    }
+
+    header p { font-size: 1.2rem; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    nav a {
+      color: white;
+      border: 2px solid var(--turquesa);
+      border-radius: 30px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav a:focus-visible {
+      background: var(--turquesa);
+      color: #10182d;
+    }
+
+    main {
+      width: min(1100px, 94%);
+      margin: 40px auto;
+    }
+
+    section {
+      background: linear-gradient(135deg, #244b96, #46317d);
+      border: 1px solid #7c91e6;
+      border-radius: 22px;
+      padding: 35px 25px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--turquesa);
+      font-size: clamp(1.5rem, 3vw, 2.3rem);
+    }
+
+    h3 { color: var(--turquesa); }
+
+    .hero-image, .content-image {
+      display: block;
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      margin: 25px auto 8px;
+      border-radius: 18px;
+      border: 2px solid var(--turquesa);
+    }
+
+    .image-note {
+      font-size: 0.85rem;
+      color: #e3e5ff;
+      font-style: italic;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: rgba(14, 22, 49, 0.65);
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #7886d7;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--turquesa);
+      color: #10213a;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .button:hover { background: #a6fff1; }
+
+    .challenge-list {
+      text-align: left;
+      max-width: 550px;
+      margin: 20px auto;
+    }
+
+    .challenge-list label {
+      display: block;
+      margin: 12px 0;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--turquesa);
+      vertical-align: middle;
+    }
+
+    #resultado {
+      font-weight: bold;
+      color: var(--turquesa);
+      min-height: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #0a1122;
+      border-top: 2px solid var(--turquesa);
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 25px 15px; }
+      nav a { padding: 8px 12px; }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ENCABEZADO PRINCIPAL -->
+<header>
+  <h1>Healthy Gaming Habits</h1>
+  <p>Juega, Disfruta y Mantén un Balance</p>
 
-  <header>
-    <h1>Healthy Gaming Habits</h1>
-    <p>Juega, Disfruta y Mantén un Balance</p>
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Sobre la causa</a>
+    <a href="help.html">Cómo ayudar</a>
+    <a href="resources.html">Recursos</a>
+  </nav>
+</header>
 
-    <nav aria-label="Navegación principal">
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre la causa</a>
-      <a href="help.html">Cómo ayudar</a>
-      <a href="resources.html">Recursos</a>
-    </nav>
-  </header>
+<main>
 
-  <main>
+  <!-- BIENVENIDA -->
+  <section class="hero">
+    <h2>¡Juega con Inteligencia, Vive con Balance!</h2>
 
-    <!-- SECCIÓN DE BIENVENIDA -->
-
-    <section class="hero">
-
-      <h2>¡Juega con Inteligencia, Vive con Balance!</h2>
-
-      <p>
-        Los videojuegos son una forma divertida de
-        entretenernos, aprender y compartir con amigos.
-        Pero también es importante mantener un balance
-        entre jugar, estudiar, descansar y disfrutar
-        otras actividades.
-      </p>
+    <p>
+      Los videojuegos son una forma divertida de entretenernos,
+      aprender y compartir con amigos. Pero también es importante
+      mantener un balance entre jugar, estudiar, descansar
+      y disfrutar otras actividades.
+    </p>
 
     <img
-      src="images/gaming-hero.png"
-      alt="Espacio moderno de videojuegos con luces azules y violetas"
-      loading="eager"
-      width="900">
+      class="hero-image"
+      src="./images/gaming-hero.png"
+      alt="Joven jugando videojuegos con libros, frutas y agua cerca"
+      width="900"
+      loading="eager">
 
-      <p class="image-note">
-        Imagen creada con inteligencia artificial.
-      </p>
+    <p class="image-note">
+      Imagen creada con inteligencia artificial.
+    </p>
 
-      <p>
-        Nuestro propósito es ayudar a los jóvenes a
-        desarrollar hábitos saludables mientras
-        disfrutan de sus videojuegos favoritos.
-      </p>
+    <p>
+      Nuestro propósito es ayudar a los jóvenes a desarrollar
+      hábitos saludables mientras disfrutan de sus
+      videojuegos favoritos.
+    </p>
 
-      <a class="button" href="about.html">
-        Aprende más
-      </a>
+    <a class="button" href="about.html">Aprende más</a>
+  </section>
 
-    </section>
+  <!-- CONSEJOS -->
+  <section id="consejos">
+    <h2>Consejos para un Gaming Saludable</h2>
 
-    <!-- CONSEJOS DE GAMING SALUDABLE -->
+    <p>
+      No tienes que dejar de jugar para cuidar tu salud.
+      Lo importante es organizar tu tiempo y tener
+      buenos hábitos todos los días.
+    </p>
 
-    <section class="tips">
+    <div class="cards">
+      <div class="card">
+        <h3>Descansa</h3>
+        <p>
+          Toma descansos durante tus sesiones de juego
+          para relajar tus ojos y tu cuerpo.
+        </p>
+      </div>
 
-      <h2>Consejos para un Gaming Saludable</h2>
+      <div class="card">
+        <h3>Muévete</h3>
+        <p>
+          Camina, haz ejercicio o realiza alguna
+          actividad física que disfrutes.
+        </p>
+      </div>
 
-      <article>
+      <div class="card">
         <h3>Organiza tu tiempo</h3>
         <p>
-          Crea un horario para jugar y cumplir
-          con tus estudios y responsabilidades.
+          Completa tus tareas escolares y responsabilidades
+          antes de comenzar a jugar.
         </p>
-      </article>
+      </div>
 
-      <article>
-        <h3>Toma descansos</h3>
+      <div class="card">
+        <h3>Duerme bien</h3>
         <p>
-          Levántate, estírate y descansa
-          entre tus partidas.
+          Mantén una rutina de sueño y evita jugar
+          hasta muy tarde.
         </p>
-      </article>
+      </div>
+    </div>
 
-      <article>
-        <h3>Cuida tu salud</h3>
-        <p>
-          Recuerda dormir bien, tomar agua
-          y mantenerte físicamente activo.
-        </p>
-      </article>
+    <img
+      class="content-image"
+      src="./images/gaming-break.png"
+      alt="Ilustración sobre tomar descansos saludables al jugar videojuegos"
+      width="900"
+      loading="lazy">
 
-      <article>
-        <h3>Mantén un balance</h3>
-        <p>
-          Comparte con tu familia y amigos,
-          estudia y disfruta otras actividades.
-        </p>
-      </article>
-
-    </section>
-
-    <!-- IMAGEN DE DESCANSOS SALUDABLES -->
-
-    <section class="hero">
-
-      <h2>¡Los Descansos También Son Importantes!</h2>
-
-      <p>
-        Pasar mucho tiempo frente a una pantalla
-        puede causar cansancio. Recuerda levantarte,
-        moverte y descansar durante tus sesiones
-        de videojuegos.
-      </p>
-
-      <img
-        src="images/gaming-break.png"
-        alt="Joven tomando un descanso de los videojuegos,
-        estirándose y tomando agua"
-        loading="lazy"
-        width="900">
-
-      <p class="image-note">
-        Imagen creada con inteligencia artificial.
-      </p>
-
-    </section>
-
-    <!-- HEALTHY GAMING CHALLENGE -->
-
-    <section class="challenge">
-
-      <h2>Healthy Gaming Challenge</h2>
-
-      <p>
-        ¿Quieres mejorar tus hábitos?
-        Participa en nuestro reto y aprende
-        a organizar mejor tu tiempo de juego.
-      </p>
-
-      <img
-        src="images/gaming-balance.png"
-        alt="Ilustración de un control de videojuegos
-        acompañado de elementos de estudio,
-        ejercicio y descanso"
-        loading="lazy"
-        width="900">
-
-      <p class="image-note">
-        Imagen creada con inteligencia artificial.
-      </p>
-
-      <p>
-        El reto consiste en seleccionar hábitos
-        saludables que puedas practicar todos
-        los días mientras disfrutas tus juegos.
-      </p>
-
-      <a class="button" href="help.html">
-        Participa en el reto
-      </a>
-
-    </section>
-
-  </main>
-
-  <!-- PIE DE PÁGINA -->
-
-  <footer>
-    <p>
-      Healthy Gaming Habits
+    <p class="image-note">
+      Imagen creada con inteligencia artificial.
     </p>
+  </section>
+
+  <!-- BALANCE -->
+  <section id="balance">
+    <h2>Encuentra tu Balance</h2>
 
     <p>
-      Proyecto educativo de
-      Fernando J. Juliá Hernández
+      Jugar videojuegos puede ser parte de una vida saludable.
+      También necesitamos tiempo para estudiar, descansar,
+      compartir con nuestra familia y mantenernos activos.
     </p>
 
-    <p>
-      COMP 2051 - Web Design Client-Side
+    <img
+      class="content-image"
+      src="./images/gaming-balance.png"
+      alt="Ilustración que representa el balance entre videojuegos y actividades saludables"
+      width="900"
+      loading="lazy">
+
+    <p class="image-note">
+      Imagen creada con inteligencia artificial.
     </p>
-  </footer>
+  </section>
+
+  <!-- RETO INTERACTIVO -->
+  <section id="reto">
+    <h2>Healthy Gaming Challenge</h2>
+
+    <p>
+      ¿Qué tan saludables son tus hábitos?
+      Marca las actividades que completaste hoy.
+    </p>
+
+    <div class="challenge-list">
+      <label>
+        <input type="checkbox" class="habit">
+        Tomé descansos mientras jugaba.
+      </label>
+
+      <label>
+        <input type="checkbox" class="habit">
+        Hice alguna actividad física.
+      </label>
+
+      <label>
+        <input type="checkbox" class="habit">
+        Completé mis tareas escolares.
+      </label>
+
+      <label>
+        <input type="checkbox" class="habit">
+        Tomé suficiente agua.
+      </label>
+
+      <label>
+        <input type="checkbox" class="habit">
+        Organicé mi tiempo para descansar.
+      </label>
+    </div>
+
+    <button class="button" type="button" onclick="verificarReto()">
+      Ver mi progreso
+    </button>
+
+    <p id="resultado" role="status" aria-live="polite"></p>
+  </section>
+
+  <!-- MENSAJE FINAL -->
+  <section>
+    <h2>¡Disfruta los Videojuegos de Forma Saludable!</h2>
+
+    <p>
+      Recuerda que los videojuegos son una actividad divertida,
+      pero no deben reemplazar el descanso, la escuela,
+      el ejercicio ni el tiempo con las personas importantes
+      en nuestra vida.
+    </p>
+
+    <a class="button" href="help.html">
+      Descubre cómo ayudar
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <p>Healthy Gaming Habits</p>
+  <p>Proyecto educativo de concienciación sobre hábitos saludables.</p>
+  <p>Creado por Fernando José Juliá Hernández.</p>
+  <p>&copy; 2026 Healthy Gaming Habits</p>
+</footer>
+
+<script>
+  function verificarReto() {
+    const habitos = document.querySelectorAll(".habit");
+    const completados = document.querySelectorAll(".habit:checked").length;
+    const resultado = document.getElementById("resultado");
+
+    if (completados === habitos.length) {
+      resultado.textContent =
+        "¡Excelente! Completaste todos los hábitos saludables de hoy.";
+    } else if (completados >= 3) {
+      resultado.textContent =
+        "¡Buen trabajo! Completaste " + completados +
+        " de " + habitos.length + " hábitos. ¡Sigue así!";
+    } else {
+      resultado.textContent =
+        "Completaste " + completados + " de " +
+        habitos.length + " hábitos. ¡Puedes seguir mejorando!";
+    }
+  }
+</script>
 
 </body>
 </html>
