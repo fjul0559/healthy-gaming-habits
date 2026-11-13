@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Recursos confiables, videos, herramientas gratuitas y un reto de siete días para desarrollar hábitos saludables al jugar videojuegos.">
+<title>Recursos | Healthy Gaming Habits</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #10182d;
+  color: #f5f7ff;
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(135deg,#142447,#34316c);
+  padding: 42px 18px;
+  text-align: center;
+  border-bottom: 3px solid #62ead8;
+}
+header h1 { color: #62ead8; font-size: 36px; }
+nav { margin-top: 25px; }
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #62ead8;
+  padding: 9px 18px;
+  border-radius: 25px;
+  margin: 5px;
+  font-weight: bold;
+}
+nav a:hover, nav a[aria-current="page"] {
+  background: #62ead8;
+  color: #142447;
+}
+main { max-width: 1100px; margin: 35px auto; padding: 0 15px; }
+section {
+  background: linear-gradient(135deg,#214b91,#433078);
+  border: 1px solid #7786dc;
+  border-radius: 22px;
+  padding: 32px 24px;
+  margin-bottom: 30px;
+}
+h2 { color: #62ead8; text-align: center; font-size: 28px; }
+.section-intro { text-align: center; max-width: 820px; margin: 15px auto 25px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #f7f9ff;
+  color: #1b294b;
+  padding: 23px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.card h3 { color: #253e83; margin: 10px 0; line-height: 1.4; }
+.card p { flex: 1; }
+.icon { font-size: 34px; }
+.source { color: #596784; font-size: 13px; font-weight: bold; }
+.button {
+  display: inline-block;
+  background: #62ead8;
+  color: #10213b;
+  padding: 12px 19px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.button:hover { background: #a5fff1; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #ffdf70;
+  outline-offset: 3px;
+}
+.video-card {
+  background: #17264b;
+  border: 1px solid #7888d9;
+  border-radius: 18px;
+  padding: 20px;
+}
+.video-card h3 { color: #62ead8; }
+.video-frame { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 12px; }
+.video-card a { color: #a5fff1; }
+.form-box {
+  background: #f7f9ff;
+  color: #1b294b;
+  max-width: 780px;
+  margin: 25px auto 0;
+  padding: 30px;
+  border-radius: 20px;
+}
+.form-box h3 { color: #253e83; }
+.form-box label {
+  display: block;
+  margin: 18px 0 7px;
+  font-weight: bold;
+}
+.form-box input, .form-box select, .form-box textarea {
+  width: 100%;
+  border: 1px solid #a9b8d3;
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+  background: white;
+  color: #1b294b;
+}
+.form-box fieldset {
+  border: 1px solid #b7c6df;
+  border-radius: 12px;
+  margin: 20px 0;
+  padding: 15px;
+}
+.form-box legend { font-weight: bold; color: #253e83; }
+.form-box .check-label { font-weight: normal; margin: 10px 0; }
+.form-box input[type="checkbox"] { width: auto; margin-right: 8px; }
+.form-box button { margin-top: 20px; }
+.note { font-size: 13px; color: #53627c; }
+.result {
+  display: none;
+  background: #e1f8f3;
+  border: 1px solid #7ad3c5;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 20px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.result.show { display: block; }
+footer {
+  background: #0a1122;
+  text-align: center;
+  padding: 28px 15px;
+  border-top: 2px solid #62ead8;
+}
+@media(max-width:600px) {
+  header h1 { font-size: 28px; }
+  section { padding: 25px 15px; }
+  .form-box { padding: 20px 15px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Healthy Gaming Habits</h1>
+  <p>Juega, Disfruta y Mantén un Balance</p>
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Sobre la causa</a>
+    <a href="help.html">Cómo ayudar</a>
+    <a href="resources.html" aria-current="page">Recursos</a>
+  </nav>
+</header>
+
+<main>
+
+<section>
+  <h2>Recursos para un gaming saludable</h2>
+  <p class="section-intro">
+    Los videojuegos pueden ser una forma divertida de aprender,
+    compartir con amigos y relajarnos. Pero también debemos
+    dedicar tiempo a estudiar, dormir, hacer ejercicio
+    y cumplir con nuestras responsabilidades.
+  </p>
+  <p class="section-intro">
+    Aquí encontrarás investigaciones, artículos, videos
+    y herramientas gratuitas que pueden ayudarte
+    a mantener un mejor balance.
+  </p>
+</section>
+
+<!-- INVESTIGACIONES -->
+
+<section>
+<h2>Investigaciones y estudios</h2>
+<p class="section-intro">
+  Aprende lo que diferentes organizaciones e investigadores
+  han descubierto sobre los videojuegos y el bienestar.
+</p>
+
+<div class="cards">
+
+<article class="card">
+  <div class="icon" aria-hidden="true">🌎</div>
+  <span class="source">Organización Mundial de la Salud</span>
+  <h3>Trastorno por videojuegos</h3>
+  <p>
+    Explica qué es el trastorno por videojuegos y cómo
+    puede afectar las responsabilidades y la vida diaria
+    de algunas personas. No todos los jugadores
+    desarrollan este problema.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://www.who.int/news-room/questions-and-answers/item/addictive-behaviours-gaming-disorder">
+  Leer investigación</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">🎓</div>
+  <span class="source">Universidad de Oxford · 2025</span>
+  <h3>Videojuegos y bienestar</h3>
+  <p>
+    Investigación que analiza la relación entre
+    las horas de juego y el bienestar de adultos.
+    Destaca la importancia de considerar
+    la experiencia del jugador y no solamente
+    cuánto tiempo juega.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://www.oii.ox.ac.uk/news-events/news/its-quality-not-quantity-that-predicts-gamers-wellbeing-new-study-finds/">
+  Leer estudio</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">🧠</div>
+  <span class="source">National Institutes of Health · 2022</span>
+  <h3>Videojuegos y habilidades cognitivas</h3>
+  <p>
+    Presenta un estudio sobre videojuegos, memoria
+    y atención en niños. Se encontraron algunas
+    asociaciones positivas, pero no se demostró
+    que jugar videojuegos causara esas mejoras.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://www.nih.gov/news-events/news-releases/video-gaming-may-be-associated-better-cognitive-performance-children">
+  Leer estudio</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">📊</div>
+  <span class="source">Pew Research Center · 2024</span>
+  <h3>Teens and Video Games Today</h3>
+  <p>
+    Reporte sobre cómo los adolescentes juegan
+    videojuegos, hacen amistades y experimentan
+    beneficios y dificultades, incluyendo problemas
+    con el sueño.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://www.pewresearch.org/internet/2024/05/09/teens-and-video-games-today/">
+  Ver reporte</a>
+</article>
+
+</div>
+</section>
+
+<!-- ARTICULOS -->
+
+<section>
+<h2>Artículos y guías educativas</h2>
+<p class="section-intro">
+  Consejos confiables para organizar el tiempo
+  y cuidar nuestra salud.
+</p>
+
+<div class="cards">
+
+<article class="card">
+  <div class="icon" aria-hidden="true">😴</div>
+  <span class="source">CDC</span>
+  <h3>La importancia de dormir bien</h3>
+  <p>
+    Explica cómo el descanso ayuda a la memoria,
+    concentración y bienestar. También ofrece
+    recomendaciones para mejorar los hábitos de sueño.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://www.cdc.gov/sleep/about/index.html">
+  Leer artículo</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">📱</div>
+  <span class="source">American Academy of Pediatrics · Español</span>
+  <h3>Plan familiar de uso de pantallas</h3>
+  <p>
+    Guía en español para establecer reglas,
+    organizar horarios y reservar tiempo
+    para estudiar, dormir y compartir
+    con familiares.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://www.healthychildren.org/Spanish/family-life/Media/paginas/How-to-Make-a-Family-Media-Use-Plan.aspx">
+  Leer guía</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">🎮</div>
+  <span class="source">Microsoft</span>
+  <h3>Límites de tiempo en videojuegos</h3>
+  <p>
+    Explica cómo configurar límites de tiempo
+    en dispositivos Windows y Xbox
+    para desarrollar una rutina digital
+    más organizada.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://support.microsoft.com/en-us/family-safety/set-screen-time-limits-across-devices">
+  Ver instrucciones</a>
+</article>
+
+</div>
+</section>
+
+<!-- VIDEOS -->
+
+<section>
+<h2>Videos educativos</h2>
+<p class="section-intro">
+  Mira estos videos de organizaciones oficiales.
+  Están en inglés, pero puedes activar
+  los subtítulos de YouTube cuando estén disponibles.
+</p>
+
+<div class="cards">
+
+<article class="video-card">
+  <h3>Gaming Disorder: Questions and Answers</h3>
+  <p>
+    La Organización Mundial de la Salud explica
+    qué es el trastorno por videojuegos
+    y responde preguntas comunes.
+  </p>
+  <iframe class="video-frame"
+    src="https://www.youtube-nocookie.com/embed/lJ71KAO0mtc"
+    title="OMS: Preguntas sobre el trastorno por videojuegos"
+    loading="lazy"
+    allowfullscreen></iframe>
+  <p>
+    <a target="_blank" rel="noopener noreferrer"
+    href="https://www.youtube.com/watch?v=lJ71KAO0mtc">
+    Abrir en YouTube</a>
+  </p>
+</article>
+
+<article class="video-card">
+  <h3>Screen Time: The Family Media Plan You NEED!</h3>
+  <p>
+    La Academia Americana de Pediatría presenta
+    ideas para crear un plan familiar
+    y mantener un uso saludable de pantallas.
+  </p>
+  <iframe class="video-frame"
+    src="https://www.youtube-nocookie.com/embed/WFfwStEOo-Y"
+    title="AAP: Plan familiar para el uso de pantallas"
+    loading="lazy"
+    allowfullscreen></iframe>
+  <p>
+    <a target="_blank" rel="noopener noreferrer"
+    href="https://www.youtube.com/watch?v=WFfwStEOo-Y">
+    Abrir en YouTube</a>
+  </p>
+</article>
+
+</div>
+</section>
+
+<!-- HERRAMIENTAS -->
+
+<section>
+<h2>Herramientas gratuitas</h2>
+<p class="section-intro">
+  Estas herramientas pueden ayudarte
+  a controlar el tiempo y organizar
+  mejor tus actividades.
+</p>
+
+<div class="cards">
+
+<article class="card">
+  <div class="icon" aria-hidden="true">⏱️</div>
+  <span class="source">Pomofocus</span>
+  <h3>Temporizador para estudiar</h3>
+  <p>
+    Organiza sesiones de concentración
+    y descansos cortos con la técnica Pomodoro.
+    Tiene funciones gratuitas.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://pomofocus.io/">
+  Usar temporizador</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">📲</div>
+  <span class="source">Google Android</span>
+  <h3>Bienestar Digital</h3>
+  <p>
+    Permite consultar el tiempo que utilizas
+    diferentes aplicaciones y establecer
+    límites en teléfonos Android compatibles.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://support.google.com/android/answer/9346420?hl=es">
+  Ver herramienta</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">🕹️</div>
+  <span class="source">Microsoft Family Safety</span>
+  <h3>Control del tiempo de juego</h3>
+  <p>
+    Ayuda a las familias a establecer
+    horarios y límites de uso
+    en dispositivos compatibles.
+  </p>
+  <a class="button" target="_blank" rel="noopener noreferrer"
+  href="https://support.microsoft.com/en-us/family-safety/set-screen-time-limits-across-devices">
+  Aprender a utilizarlo</a>
+</article>
+
+<article class="card">
+  <div class="icon" aria-hidden="true">📋</div>
+  <span class="source">Healthy Gaming Habits</span>
+  <h3>Calendario y checklist</h3>
+  <p>
+    Descarga las herramientas preparadas
+    para el proyecto de Fernando.
+    Puedes imprimirlas y registrar tus hábitos.
+  </p>
+  <a class="button" href="help.html#descargas">
+  Ver documentos</a>
+</article>
+
+</div>
+</section>
+
+<!-- FORMULARIO DEL RETO -->
+
+<section id="reto">
+<h2>Participa en el reto de 7 días</h2>
+
+<p class="section-intro">
+  ¿Quieres mejorar tus hábitos?
+  Completa este formulario para crear
+  tu compromiso personal.
+  Al terminar, podrás guardar tus respuestas.
+</p>
+
+<div class="form-box">
+
+<h3>Mi compromiso Healthy Gaming Habits</h3>
+
+<form id="retoForm">
+
+<label for="apodo">Apodo (opcional)</label>
+<input id="apodo" name="apodo" type="text"
+  maxlength="40" placeholder="Ejemplo: GamerPR">
+
+<label for="tiempo">¿Cuánto tiempo juegas normalmente al día?</label>
+<select id="tiempo" name="tiempo" required>
+  <option value="">Selecciona una opción</option>
+  <option>Menos de 1 hora</option>
+  <option>Entre 1 y 2 horas</option>
+  <option>Entre 2 y 4 horas</option>
+  <option>Más de 4 horas</option>
+  <option>No juego todos los días</option>
+</select>
+
+<label for="dificultad">¿Qué es lo más difícil de balancear?</label>
+<select id="dificultad" name="dificultad" required>
+  <option value="">Selecciona una opción</option>
+  <option>Los estudios</option>
+  <option>El trabajo</option>
+  <option>El descanso</option>
+  <option>La actividad física</option>
+  <option>El tiempo con familiares y amigos</option>
+  <option>No tengo dificultades actualmente</option>
+</select>
+
+<fieldset>
+  <legend>¿Qué hábitos quieres mejorar esta semana?</legend>
+
+  <label class="check-label">
+    <input type="checkbox" name="habitos" value="Organizar mi tiempo">
+    Organizar mi tiempo
+  </label>
+
+  <label class="check-label">
+    <input type="checkbox" name="habitos" value="Dormir mejor">
+    Dormir mejor
+  </label>
+
+  <label class="check-label">
+    <input type="checkbox" name="habitos" value="Hacer ejercicio">
+    Hacer ejercicio
+  </label>
+
+  <label class="check-label">
+    <input type="checkbox" name="habitos" value="Tomar descansos">
+    Tomar descansos
+  </label>
+
+  <label class="check-label">
+    <input type="checkbox" name="habitos" value="Compartir con otras personas">
+    Compartir con otras personas
+  </label>
+</fieldset>
+
+<label for="meta">¿Cuál es tu meta para los próximos siete días?</label>
+<textarea id="meta" name="meta" rows="4" maxlength="500"
+  required placeholder="Ejemplo: Terminar mis tareas antes de jugar y descansar más."></textarea>
+
+<label for="compromiso">¿Aceptas intentar completar el reto?</label>
+<select id="compromiso" name="compromiso" required>
+  <option value="">Selecciona una opción</option>
+  <option>Sí, acepto el reto</option>
+  <option>Quiero intentarlo poco a poco</option>
+</select>
+
+<p class="note">
+  Este formulario no solicita correo electrónico
+  ni información médica. Tus respuestas se procesan
+  en tu navegador y no se envían a Fernando
+  ni se guardan en una base de datos.
+</p>
+
+<button class="button" type="submit">
+  Crear mi compromiso
+</button>
+
+</form>
+
+<div id="resultado" class="result" role="status" aria-live="polite"></div>
+
+<button id="descargar" class="button"
+  type="button" style="display:none">
+  Descargar mi compromiso
+</button>
+
+</div>
+</section>
+
+<!-- MENSAJE FINAL -->
+
+<section>
+<h2>Un mensaje de Fernando</h2>
+<p class="section-intro">
+  Me gustan los videojuegos y sé que a veces
+  es difícil encontrar tiempo para todo.
+  Con este proyecto quiero compartir información
+  y herramientas que puedan ayudar a otros jóvenes.
+</p>
+<p class="section-intro">
+  No tenemos que dejar de jugar para cumplir
+  con nuestras responsabilidades.
+  Podemos aprender a disfrutar de los videojuegos
+  mientras cuidamos nuestra salud
+  y trabajamos por nuestras metas.
+</p>
+<p class="section-intro">
+  <strong>Fernando José Juliá Hernández</strong>
+</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Healthy Gaming Habits</p>
+  <p>Proyecto educativo creado por Fernando José Juliá Hernández.</p>
+  <p>&copy; 2026 Healthy Gaming Habits</p>
+  <p>Los enlaces externos pertenecen a sus respectivas organizaciones.</p>
+</footer>
+
+<script>
+const form = document.getElementById("retoForm");
+const resultado = document.getElementById("resultado");
+const descargar = document.getElementById("descargar");
+let resumen = "";
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const apodo = document.getElementById("apodo").value.trim();
+  const tiempo = document.getElementById("tiempo").value;
+  const dificultad = document.getElementById("dificultad").value;
+  const meta = document.getElementById("meta").value.trim();
+  const compromiso = document.getElementById("compromiso").value;
+
+  const habitos = Array.from(
+    document.querySelectorAll('input[name="habitos"]:checked')
+  ).map(item => item.value);
+
+  if (habitos.length === 0) {
+    alert("Selecciona al menos un hábito para mejorar.");
+    return;
+  }
+
+  resumen =
+    "HEALTHY GAMING HABITS\n" +
+    "Mi compromiso de 7 días\n\n" +
+    "Apodo: " + (apodo || "Anónimo") + "\n" +
+    "Tiempo de juego: " + tiempo + "\n" +
+    "Mayor dificultad: " + dificultad + "\n" +
+    "Hábitos que quiero mejorar:\n- " +
+    habitos.join("\n- ") + "\n\n" +
+    "Mi meta: " + meta + "\n" +
+    "Compromiso: " + compromiso + "\n\n" +
+    "¡Juega, disfruta y mantén un balance!";
+
+  resultado.textContent = resumen;
+  resultado.classList.add("show");
+  descargar.style.display = "inline-block";
+  resultado.scrollIntoView({behavior:"smooth",block:"nearest"});
+});
+
+descargar.addEventListener("click", function() {
+  if (!resumen) return;
+
+  const archivo = new Blob([resumen], {
+    type: "text/plain;charset=utf-8"
+  });
+
+  const enlace = document.createElement("a");
+  const url = URL.createObjectURL(archivo);
+
+  enlace.href = url;
+  enlace.download = "Mi_Compromiso_Healthy_Gaming_Habits.txt";
+  document.body.appendChild(enlace);
+  enlace.click();
+  enlace.remove();
+
+  URL.revokeObjectURL(url);
+});
+</script>
+
+</body>
+</html>
