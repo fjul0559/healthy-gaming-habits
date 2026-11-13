@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-    content="Consejos, calendario y checklist gratuitos para mantener hábitos saludables al jugar videojuegos.">
+        content="Consejos y herramientas gratuitas para mantener un balance saludable entre los videojuegos, los estudios, el trabajo y la vida social.">
 
   <title>Cómo ayudar | Healthy Gaming Habits</title>
 
@@ -60,7 +60,8 @@
     }
 
     nav a:hover,
-    nav a:focus-visible {
+    nav a:focus-visible,
+    nav a[aria-current="page"] {
       background: #67f1dc;
       color: #10182d;
     }
@@ -141,7 +142,7 @@
       margin-bottom: 12px;
     }
 
-    /* DOCUMENTOS DESCARGABLES */
+    /* MATERIALES DESCARGABLES */
 
     .downloads {
       background: linear-gradient(135deg, #18345e, #443078);
@@ -149,7 +150,7 @@
     }
 
     .download-card {
-      background: #f8faff;
+      background: #ffffff;
       color: #18233e;
       padding: 22px;
       border-radius: 18px;
@@ -182,11 +183,6 @@
       margin-top: auto;
     }
 
-    .download-note {
-      font-size: 0.9rem;
-      color: #e0eaff;
-    }
-
     .kit-box {
       background: rgba(10, 20, 45, 0.65);
       border: 1px solid #67f1dc;
@@ -195,7 +191,12 @@
       margin-top: 30px;
     }
 
-    /* MENSAJE PERSONAL */
+    .download-note {
+      font-size: 0.9rem;
+      color: #e0eaff;
+    }
+
+    /* MENSAJE DE FERNANDO */
 
     .message {
       background: rgba(14, 22, 49, 0.75);
@@ -245,12 +246,9 @@
         padding: 25px 16px;
       }
 
-      .challenge {
-        padding: 22px 16px;
-      }
-
+      .challenge,
       .download-card {
-        padding: 18px;
+        padding: 20px 16px;
       }
     }
   </style>
@@ -465,9 +463,9 @@
     </div>
   </section>
 
-  <!-- SECCION 5: MATERIALES GRATUITOS -->
+  <!-- SECCION 5: IMAGENES Y DOCUMENTOS -->
 
-  <section class="downloads">
+  <section class="downloads" id="descargas">
 
     <h2>Descarga tus herramientas gratuitas</h2>
 
@@ -478,8 +476,8 @@
     </p>
 
     <p>
-      Primero puedes ver cómo son los documentos
-      y después descargar el que prefieras.
+      Puedes ver una imagen de cada documento
+      antes de descargarlo.
     </p>
 
     <div class="cards">
@@ -508,7 +506,7 @@
           class="button"
           href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
           download>
-          Descargar calendario PDF
+          Descargar calendario (PDF)
         </a>
 
       </article>
@@ -536,7 +534,7 @@
           class="button"
           href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
           download>
-          Descargar checklist PDF
+          Descargar checklist (PDF)
         </a>
 
       </article>
@@ -559,7 +557,7 @@
         class="button"
         href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
         download>
-        Descargar kit completo PDF
+        Descargar kit completo (PDF)
       </a>
 
       <p class="download-note">
@@ -572,7 +570,7 @@
 
   </section>
 
-  <!-- SECCION 6: MENSAJE DE FERNANDO -->
+  <!-- SECCION 6: MENSAJE PERSONAL -->
 
   <section>
     <h2>Un mensaje de Fernando</h2>
