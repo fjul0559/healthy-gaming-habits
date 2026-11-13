@@ -3,288 +3,377 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consejos, herramientas gratuitas y formas de participar en Healthy Gaming Habits.">
 
-<title>Cómo ayudar | Healthy Gaming Habits</title>
+  <title>Cómo ayudar | Healthy Gaming Habits</title>
 
-<style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #10182d;
+      color: white;
+      line-height: 1.7;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #10182d;
-  color: white;
-  line-height: 1.7;
-}
+    /* ENCABEZADO */
 
-/* ENCABEZADO */
+    header {
+      background: linear-gradient(135deg, #142447, #34316c);
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 3px solid #62ead8;
+    }
 
-header {
-  background: linear-gradient(135deg, #142447, #34316c);
-  text-align: center;
-  padding: 40px 20px;
-  border-bottom: 3px solid #62ead8;
-}
+    header h1 {
+      color: #62ead8;
+      font-size: 36px;
+    }
 
-header h1 {
-  color: #62ead8;
-  font-size: 36px;
-}
+    header p {
+      font-size: 19px;
+    }
 
-header p {
-  font-size: 19px;
-}
+    /* MENU */
 
-/* MENU */
+    nav {
+      margin-top: 25px;
+    }
 
-nav {
-  margin-top: 25px;
-}
+    nav a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 18px;
+      border: 2px solid #62ead8;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-nav a {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px 18px;
-  border: 2px solid #62ead8;
-  border-radius: 25px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+    nav a:hover,
+    nav a[aria-current="page"] {
+      background: #62ead8;
+      color: #142447;
+    }
 
-nav a:hover,
-nav a[aria-current="page"] {
-  background: #62ead8;
-  color: #142447;
-}
+    /* CONTENIDO */
 
-/* CONTENIDO */
+    main {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 15px;
+    }
 
-main {
-  max-width: 1050px;
-  margin: 35px auto;
-  padding: 0 15px;
-}
+    section {
+      background: linear-gradient(135deg, #214b91, #433078);
+      border: 1px solid #7786dc;
+      border-radius: 22px;
+      padding: 35px 25px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
 
-section {
-  background: linear-gradient(135deg, #214b91, #433078);
-  border: 1px solid #7786dc;
-  border-radius: 22px;
-  padding: 35px 25px;
-  margin-bottom: 30px;
-  text-align: center;
-}
+    h2 {
+      color: #62ead8;
+      font-size: 29px;
+    }
 
-h2 {
-  color: #62ead8;
-  font-size: 29px;
-}
+    h3 {
+      color: #62ead8;
+    }
 
-h3 {
-  color: #62ead8;
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
 
-.cards {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 25px;
-}
+    .card {
+      background: #17264b;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #7888d9;
+    }
 
-.card {
-  background: #17264b;
-  border-radius: 16px;
-  padding: 24px;
-  border: 1px solid #7888d9;
-}
+    .steps,
+    .challenge-list {
+      max-width: 700px;
+      margin: 25px auto;
+      text-align: left;
+      padding-left: 30px;
+    }
 
-.steps,
-.challenge-list {
-  max-width: 700px;
-  margin: 25px auto;
-  text-align: left;
-  padding-left: 30px;
-}
+    .steps li,
+    .challenge-list li {
+      margin-bottom: 14px;
+    }
 
-.steps li,
-.challenge-list li {
-  margin-bottom: 14px;
-}
+    .challenge {
+      background: #17244c;
+      border: 2px solid #62ead8;
+      border-radius: 18px;
+      padding: 25px;
+    }
 
-.challenge {
-  background: #17244c;
-  border: 2px solid #62ead8;
-  border-radius: 18px;
-  padding: 25px;
-}
+    /* BOTONES */
 
-/* BOTONES */
+    .button {
+      display: inline-block;
+      background: #62ead8;
+      color: #10213b;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 12px 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: inherit;
+    }
 
-.button {
-  display: inline-block;
-  background: #62ead8;
-  color: #10213b;
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 12px 5px;
-}
+    .button:hover {
+      background: #a5fff1;
+    }
 
-.button:hover {
-  background: #a5fff1;
-}
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ffe27a;
+      outline-offset: 3px;
+    }
 
-a:focus-visible {
-  outline: 3px solid #ffe27a;
-  outline-offset: 3px;
-}
+    /* DOCUMENTOS */
 
-/* DOCUMENTOS */
+    .download-card {
+      background: #f7f9ff;
+      color: #1b294b;
+      padding: 22px;
+      border-radius: 20px;
+    }
 
-.download-card {
-  background: #f7f9ff;
-  color: #1b294b;
-  padding: 22px;
-  border-radius: 20px;
-}
+    .download-card h3 {
+      color: #213d82;
+    }
 
-.download-card h3 {
-  color: #213d82;
-}
+    .download-card p {
+      color: #34446b;
+    }
 
-.download-card p {
-  color: #34446b;
-}
+    /* VISTAS PREVIAS */
 
-/* VISTAS PREVIAS */
+    .paper {
+      background: #ffffff;
+      color: #263454;
+      padding: 20px 14px;
+      border-radius: 12px;
+      border: 1px solid #cbd3e5;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+      margin: 20px 0;
+      text-align: left;
+    }
 
-.paper {
-  background: #ffffff;
-  color: #263454;
-  padding: 20px 14px;
-  border-radius: 12px;
-  border: 1px solid #cbd3e5;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-  margin: 20px 0;
-  text-align: left;
-}
+    .paper h4 {
+      text-align: center;
+      color: #253e83;
+      margin: 5px 0 15px;
+      font-size: 17px;
+    }
 
-.paper h4 {
-  text-align: center;
-  color: #253e83;
-  margin: 5px 0 15px;
-  font-size: 17px;
-}
+    .paper-subtitle {
+      text-align: center;
+      font-size: 12px;
+      color: #586781;
+      margin-bottom: 15px;
+    }
 
-.paper-subtitle {
-  text-align: center;
-  font-size: 12px;
-  color: #586781;
-  margin-bottom: 15px;
-}
+    .habit-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+    }
 
-.habit-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 10px;
-}
+    .habit-table th,
+    .habit-table td {
+      border: 1px solid #cad5e7;
+      padding: 7px 2px;
+      text-align: center;
+    }
 
-.habit-table th,
-.habit-table td {
-  border: 1px solid #cad5e7;
-  padding: 7px 2px;
-  text-align: center;
-}
+    .habit-table th {
+      background: #dff4f0;
+      color: #233b66;
+    }
 
-.habit-table th {
-  background: #dff4f0;
-  color: #233b66;
-}
+    .habit-table td:first-child,
+    .habit-table th:first-child {
+      text-align: left;
+      padding-left: 5px;
+    }
 
-.habit-table td:first-child,
-.habit-table th:first-child {
-  text-align: left;
-  padding-left: 5px;
-}
+    .habit-table td {
+      height: 29px;
+    }
 
-.habit-table td {
-  height: 29px;
-}
+    .reflection-item {
+      margin-bottom: 17px;
+    }
 
-.reflection-item {
-  margin-bottom: 17px;
-}
+    .reflection-item strong {
+      display: block;
+      font-size: 13px;
+      color: #253e83;
+    }
 
-.reflection-item strong {
-  display: block;
-  font-size: 13px;
-  color: #253e83;
-}
+    .write-line {
+      height: 25px;
+      border-bottom: 1px solid #c5d0e3;
+    }
 
-.write-line {
-  height: 25px;
-  border-bottom: 1px solid #c5d0e3;
-}
+    .kit-box {
+      background: #152447;
+      border: 2px solid #62ead8;
+      border-radius: 18px;
+      padding: 25px;
+      margin-top: 30px;
+    }
 
-.kit-box {
-  background: #152447;
-  border: 2px solid #62ead8;
-  border-radius: 18px;
-  padding: 25px;
-  margin-top: 30px;
-}
+    /* MENSAJE */
 
-/* MENSAJE */
+    .message {
+      background: #152447;
+      border-left: 5px solid #62ead8;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 25px auto;
+    }
 
-.message {
-  background: #152447;
-  border-left: 5px solid #62ead8;
-  padding: 25px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 25px auto;
-}
+    .signature {
+      color: #62ead8;
+      font-weight: bold;
+    }
 
-.signature {
-  color: #62ead8;
-  font-weight: bold;
-}
+    /* FORMULARIO DE CONTACTO */
 
-/* PIE DE PAGINA */
+    .contact-box {
+      background: #152447;
+      border: 2px solid #62ead8;
+      border-radius: 18px;
+      padding: 30px;
+      max-width: 750px;
+      margin: 25px auto;
+      text-align: left;
+    }
 
-footer {
-  background: #0a1122;
-  border-top: 2px solid #62ead8;
-  padding: 25px;
-  text-align: center;
-}
+    .contact-box label {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 7px;
+      color: #ffffff;
+      font-weight: bold;
+    }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 28px;
-  }
+    .contact-box input,
+    .contact-box select,
+    .contact-box textarea {
+      display: block;
+      width: 100%;
+      padding: 13px;
+      border: 2px solid #aab8e9;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #152447;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
 
-  section {
-    padding: 25px 15px;
-  }
+    .contact-box textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
 
-  .paper {
-    padding: 12px 8px;
-  }
+    .contact-box input:focus,
+    .contact-box select:focus,
+    .contact-box textarea:focus {
+      border-color: #62ead8;
+    }
 
-  .habit-table {
-    font-size: 9px;
-  }
-}
+    .form-note {
+      font-size: 14px;
+      color: #e2e9ff;
+      margin-top: 15px;
+    }
 
-</style>
+    .form-actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-result {
+      margin-top: 18px;
+      color: #b8fff3;
+      font-weight: bold;
+      text-align: center;
+      min-height: 25px;
+    }
+
+    .message-preview {
+      display: none;
+      background: #ffffff;
+      color: #152447;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .message-preview.visible {
+      display: block;
+    }
+
+    /* PIE DE PAGINA */
+
+    footer {
+      background: #0a1122;
+      border-top: 2px solid #62ead8;
+      padding: 25px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      .paper {
+        padding: 12px 8px;
+      }
+
+      .habit-table {
+        font-size: 9px;
+      }
+
+      .contact-box {
+        padding: 20px 15px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -303,397 +392,492 @@ footer {
 
 <main>
 
-<!-- INTRODUCCION -->
+  <!-- INTRODUCCION -->
 
-<section>
-
-  <h2>¿Cómo podemos ayudar?</h2>
-
-  <p>
-    Todos podemos ayudar a promover hábitos saludables
-    entre las personas que disfrutan de los videojuegos.
-  </p>
-
-  <p>
-    No se trata de dejar de jugar, sino de aprender
-    a organizar nuestro tiempo para disfrutar
-    de los videojuegos sin descuidar nuestra salud,
-    nuestros estudios y nuestras responsabilidades.
-  </p>
-
-  <p>
-    Con pequeños cambios en nuestra rutina
-    podemos lograr un mejor balance.
-  </p>
-
-</section>
-
-<!-- CONSEJOS -->
-
-<section>
-
-  <h2>Pequeñas acciones que hacen la diferencia</h2>
-
-  <div class="cards">
-
-    <article class="card">
-      <h3>Organiza tu tiempo</h3>
-      <p>
-        Prepara un horario para estudiar,
-        trabajar, descansar y jugar.
-        Trata de cumplir con tus responsabilidades primero.
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>Toma descansos</h3>
-      <p>
-        Durante las sesiones de juego,
-        toma descansos para levantarte,
-        estirarte y descansar la vista.
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>Cuida tu descanso</h3>
-      <p>
-        Evita jugar hasta muy tarde
-        cuando tienes clases o trabajo
-        al día siguiente.
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>Comparte con otros</h3>
-      <p>
-        Disfruta de tus amistades en línea,
-        pero también dedica tiempo
-        a compartir con familiares y amigos en persona.
-      </p>
-    </article>
-
-  </div>
-
-</section>
-
-<!-- AYUDAR A OTROS -->
-
-<section>
-
-  <h2>¿Cómo ayudar a un amigo o familiar?</h2>
-
-  <p>
-    A veces conocemos personas que pasan muchas horas
-    jugando videojuegos y tienen dificultades
-    para organizar su tiempo.
-  </p>
-
-  <p>
-    Podemos ayudarlas de una manera positiva y respetuosa.
-  </p>
-
-  <ol class="steps">
-
-    <li>
-      <strong>Habla con respeto:</strong>
-      Escucha a la persona antes de darle consejos.
-    </li>
-
-    <li>
-      <strong>Comparte ideas:</strong>
-      Recomienda organizar un horario para jugar
-      y cumplir con sus tareas.
-    </li>
-
-    <li>
-      <strong>Invita a otras actividades:</strong>
-      Pueden caminar, hacer ejercicio,
-      estudiar juntos o compartir fuera de los videojuegos.
-    </li>
-
-    <li>
-      <strong>Da un buen ejemplo:</strong>
-      Practica también los hábitos saludables
-      que recomiendas.
-    </li>
-
-    <li>
-      <strong>Ofrece apoyo:</strong>
-      Recuerda que cambiar una rutina puede tomar tiempo.
-    </li>
-
-  </ol>
-
-</section>
-
-<!-- RETO DE SIETE DIAS -->
-
-<section>
-
-  <h2>Reto de 7 días: Encuentra tu balance</h2>
-
-  <p>
-    Este pequeño reto puede ayudarte a comenzar
-    a desarrollar hábitos más saludables.
-  </p>
-
-  <div class="challenge">
-
-    <h3>¡Acepta el reto!</h3>
-
-    <ul class="challenge-list">
-      <li><strong>Día 1:</strong> Anota cuánto tiempo dedicas a los videojuegos.</li>
-      <li><strong>Día 2:</strong> Prepara un horario para estudiar, trabajar y jugar.</li>
-      <li><strong>Día 3:</strong> Toma descansos durante tus sesiones de juego.</li>
-      <li><strong>Día 4:</strong> Dedica tiempo a una actividad física.</li>
-      <li><strong>Día 5:</strong> Comparte con familiares o amigos fuera de línea.</li>
-      <li><strong>Día 6:</strong> Organiza tus responsabilidades antes de jugar.</li>
-      <li><strong>Día 7:</strong> Reflexiona sobre los cambios que lograste.</li>
-    </ul>
+  <section>
+    <h2>¿Cómo podemos ayudar?</h2>
 
     <p>
-      El objetivo no es dejar de jugar,
-      sino disfrutar de una manera más saludable.
+      Todos podemos ayudar a promover hábitos saludables
+      entre las personas que disfrutan de los videojuegos.
     </p>
 
-  </div>
+    <p>
+      No se trata de dejar de jugar, sino de aprender
+      a organizar nuestro tiempo para disfrutar
+      de los videojuegos sin descuidar nuestra salud,
+      nuestros estudios y nuestras responsabilidades.
+    </p>
 
-</section>
+    <p>
+      Con pequeños cambios en nuestra rutina
+      podemos lograr un mejor balance.
+    </p>
+  </section>
 
-<!-- HERRAMIENTAS GRATUITAS -->
+  <!-- CONSEJOS -->
 
-<section id="descargas">
+  <section>
+    <h2>Pequeñas acciones que hacen la diferencia</h2>
 
-  <h2>Descarga tus herramientas gratuitas</h2>
+    <div class="cards">
 
-  <p>
-    Para ayudarte a completar el reto de siete días,
-    preparé dos documentos que puedes descargar,
-    imprimir y utilizar durante la semana.
-  </p>
-
-  <p>
-    Aquí puedes ver cómo son estas herramientas
-    antes de descargarlas.
-  </p>
-
-  <div class="cards">
-
-    <!-- CALENDARIO -->
-
-    <article class="download-card">
-
-      <h3>Calendario de hábitos saludables</h3>
-
-      <div class="paper">
-
-        <h4>Mi calendario de hábitos</h4>
-
-        <p class="paper-subtitle">
-          Healthy Gaming Habits — Reto de 7 días
+      <article class="card">
+        <h3>Organiza tu tiempo</h3>
+        <p>
+          Prepara un horario para estudiar,
+          trabajar, descansar y jugar.
+          Trata de cumplir con tus responsabilidades primero.
         </p>
+      </article>
 
-        <table class="habit-table">
-
-          <thead>
-            <tr>
-              <th>Hábito</th>
-              <th>L</th>
-              <th>M</th>
-              <th>M</th>
-              <th>J</th>
-              <th>V</th>
-              <th>S</th>
-              <th>D</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Estudiar</td>
-              <td>□</td><td>□</td><td>□</td>
-              <td>□</td><td>□</td><td>□</td><td>□</td>
-            </tr>
-
-            <tr>
-              <td>Descansar</td>
-              <td>□</td><td>□</td><td>□</td>
-              <td>□</td><td>□</td><td>□</td><td>□</td>
-            </tr>
-
-            <tr>
-              <td>Ejercicio</td>
-              <td>□</td><td>□</td><td>□</td>
-              <td>□</td><td>□</td><td>□</td><td>□</td>
-            </tr>
-
-            <tr>
-              <td>Tiempo social</td>
-              <td>□</td><td>□</td><td>□</td>
-              <td>□</td><td>□</td><td>□</td><td>□</td>
-            </tr>
-
-            <tr>
-              <td>Juego balanceado</td>
-              <td>□</td><td>□</td><td>□</td>
-              <td>□</td><td>□</td><td>□</td><td>□</td>
-            </tr>
-
-          </tbody>
-
-        </table>
-
-        <p class="paper-subtitle">
-          Marca cada día que cumplas con tus hábitos.
+      <article class="card">
+        <h3>Toma descansos</h3>
+        <p>
+          Durante las sesiones de juego,
+          toma descansos para levantarte,
+          estirarte y descansar la vista.
         </p>
+      </article>
 
-      </div>
+      <article class="card">
+        <h3>Cuida tu descanso</h3>
+        <p>
+          Evita jugar hasta muy tarde
+          cuando tienes clases o trabajo
+          al día siguiente.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Comparte con otros</h3>
+        <p>
+          Disfruta de tus amistades en línea,
+          pero también dedica tiempo
+          a compartir con familiares y amigos en persona.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- AYUDAR A OTROS -->
+
+  <section>
+    <h2>¿Cómo ayudar a un amigo o familiar?</h2>
+
+    <p>
+      A veces conocemos personas que pasan muchas horas
+      jugando videojuegos y tienen dificultades
+      para organizar su tiempo.
+    </p>
+
+    <p>
+      Podemos ayudarlas de una manera positiva y respetuosa.
+    </p>
+
+    <ol class="steps">
+      <li>
+        <strong>Habla con respeto:</strong>
+        Escucha a la persona antes de darle consejos.
+      </li>
+
+      <li>
+        <strong>Comparte ideas:</strong>
+        Recomienda organizar un horario para jugar
+        y cumplir con sus tareas.
+      </li>
+
+      <li>
+        <strong>Invita a otras actividades:</strong>
+        Pueden caminar, hacer ejercicio,
+        estudiar juntos o compartir fuera de los videojuegos.
+      </li>
+
+      <li>
+        <strong>Da un buen ejemplo:</strong>
+        Practica también los hábitos saludables
+        que recomiendas.
+      </li>
+
+      <li>
+        <strong>Ofrece apoyo:</strong>
+        Recuerda que cambiar una rutina puede tomar tiempo.
+      </li>
+    </ol>
+  </section>
+
+  <!-- RETO DE SIETE DIAS -->
+
+  <section>
+    <h2>Reto de 7 días: Encuentra tu balance</h2>
+
+    <p>
+      Este pequeño reto puede ayudarte a comenzar
+      a desarrollar hábitos más saludables.
+    </p>
+
+    <div class="challenge">
+      <h3>¡Acepta el reto!</h3>
+
+      <ul class="challenge-list">
+        <li><strong>Día 1:</strong> Anota cuánto tiempo dedicas a los videojuegos.</li>
+        <li><strong>Día 2:</strong> Prepara un horario para estudiar, trabajar y jugar.</li>
+        <li><strong>Día 3:</strong> Toma descansos durante tus sesiones de juego.</li>
+        <li><strong>Día 4:</strong> Dedica tiempo a una actividad física.</li>
+        <li><strong>Día 5:</strong> Comparte con familiares o amigos fuera de línea.</li>
+        <li><strong>Día 6:</strong> Organiza tus responsabilidades antes de jugar.</li>
+        <li><strong>Día 7:</strong> Reflexiona sobre los cambios que lograste.</li>
+      </ul>
 
       <p>
-        Utiliza este calendario para marcar tus hábitos
-        durante siete días y observar tu progreso.
+        El objetivo no es dejar de jugar,
+        sino disfrutar de una manera más saludable.
+      </p>
+    </div>
+  </section>
+
+  <!-- HERRAMIENTAS GRATUITAS -->
+
+  <section id="descargas">
+    <h2>Descarga tus herramientas gratuitas</h2>
+
+    <p>
+      Para ayudarte a completar el reto de siete días,
+      preparé dos documentos que puedes descargar,
+      imprimir y utilizar durante la semana.
+    </p>
+
+    <p>
+      Aquí puedes ver cómo son estas herramientas
+      antes de descargarlas.
+    </p>
+
+    <div class="cards">
+
+      <!-- CALENDARIO -->
+
+      <article class="download-card">
+        <h3>Calendario de hábitos saludables</h3>
+
+        <div class="paper">
+          <h4>Mi calendario de hábitos</h4>
+
+          <p class="paper-subtitle">
+            Healthy Gaming Habits — Reto de 7 días
+          </p>
+
+          <table class="habit-table">
+            <thead>
+              <tr>
+                <th scope="col">Hábito</th>
+                <th scope="col">Lun</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Mié</th>
+                <th scope="col">Jue</th>
+                <th scope="col">Vie</th>
+                <th scope="col">Sáb</th>
+                <th scope="col">Dom</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Estudiar</th>
+                <td>□</td><td>□</td><td>□</td>
+                <td>□</td><td>□</td><td>□</td><td>□</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Descansar</th>
+                <td>□</td><td>□</td><td>□</td>
+                <td>□</td><td>□</td><td>□</td><td>□</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Ejercicio</th>
+                <td>□</td><td>□</td><td>□</td>
+                <td>□</td><td>□</td><td>□</td><td>□</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Tiempo social</th>
+                <td>□</td><td>□</td><td>□</td>
+                <td>□</td><td>□</td><td>□</td><td>□</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Juego balanceado</th>
+                <td>□</td><td>□</td><td>□</td>
+                <td>□</td><td>□</td><td>□</td><td>□</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="paper-subtitle">
+            Marca cada día que cumplas con tus hábitos.
+          </p>
+        </div>
+
+        <p>
+          Utiliza este calendario para marcar tus hábitos
+          durante siete días y observar tu progreso.
+        </p>
+
+        <a
+          class="button"
+          href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
+          download>
+          Descargar calendario (PDF)
+        </a>
+      </article>
+
+      <!-- CHECKLIST -->
+
+      <article class="download-card">
+        <h3>Checklist y reflexión personal</h3>
+
+        <div class="paper">
+          <h4>Mi reflexión semanal</h4>
+
+          <p class="paper-subtitle">
+            Healthy Gaming Habits — Weekly Check-In
+          </p>
+
+          <div class="reflection-item">
+            <strong>¿Organicé bien mi tiempo?</strong>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+          </div>
+
+          <div class="reflection-item">
+            <strong>¿Qué hábito logré mejorar?</strong>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+          </div>
+
+          <div class="reflection-item">
+            <strong>¿Qué fue lo más difícil?</strong>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+          </div>
+
+          <div class="reflection-item">
+            <strong>¿Qué quiero mejorar?</strong>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+          </div>
+        </div>
+
+        <p>
+          Completa esta hoja para evaluar tus hábitos,
+          identificar tus logros y establecer nuevas metas.
+        </p>
+
+        <a
+          class="button"
+          href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
+          download>
+          Descargar checklist (PDF)
+        </a>
+      </article>
+
+    </div>
+
+    <!-- KIT COMPLETO -->
+
+    <div class="kit-box">
+      <h3>Descarga el kit completo</h3>
+
+      <p>
+        También puedes descargar el calendario
+        y el checklist juntos en un solo documento,
+        listo para imprimir.
       </p>
 
       <a
         class="button"
-        href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
+        href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
         download>
-        Descargar calendario (PDF)
+        Descargar kit completo (PDF)
       </a>
-
-    </article>
-
-    <!-- CHECKLIST -->
-
-    <article class="download-card">
-
-      <h3>Checklist y reflexión personal</h3>
-
-      <div class="paper">
-
-        <h4>Mi reflexión semanal</h4>
-
-        <p class="paper-subtitle">
-          Healthy Gaming Habits — Weekly Check-In
-        </p>
-
-        <div class="reflection-item">
-          <strong>¿Organicé bien mi tiempo?</strong>
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-
-        <div class="reflection-item">
-          <strong>¿Qué hábito logré mejorar?</strong>
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-
-        <div class="reflection-item">
-          <strong>¿Qué fue lo más difícil?</strong>
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-
-        <div class="reflection-item">
-          <strong>¿Qué quiero mejorar?</strong>
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-
-      </div>
 
       <p>
-        Completa esta hoja para evaluar tus hábitos,
-        identificar tus logros y establecer nuevas metas.
+        Material educativo gratuito de Healthy Gaming Habits.
+      </p>
+    </div>
+  </section>
+
+  <!-- MENSAJE PERSONAL -->
+
+  <section>
+    <h2>Un mensaje de Fernando</h2>
+
+    <div class="message">
+      <p>
+        Yo sé que no siempre es fácil organizar
+        nuestro tiempo, especialmente cuando tenemos
+        clases, trabajo y otras responsabilidades.
       </p>
 
-      <a
-        class="button"
-        href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
-        download>
-        Descargar checklist (PDF)
-      </a>
+      <p>
+        Como estudiante de Computer Science
+        que disfruta mucho de los videojuegos,
+        entiendo lo difícil que puede ser
+        encontrar ese balance.
+      </p>
 
-    </article>
+      <p>
+        Por eso quiero motivar a otros jóvenes
+        a comenzar con pequeños cambios.
+        No tenemos que dejar de jugar videojuegos
+        para cumplir con nuestras metas.
+      </p>
 
-  </div>
+      <p>
+        Podemos disfrutar de nuestros pasatiempos
+        y también dedicar tiempo a nuestro futuro.
+      </p>
 
-  <!-- KIT COMPLETO -->
+      <p class="signature">
+        Fernando José Juliá Hernández
+      </p>
+    </div>
 
-  <div class="kit-box">
-
-    <h3>Descarga el kit completo</h3>
-
-    <p>
-      También puedes descargar el calendario
-      y el checklist juntos en un solo documento,
-      listo para imprimir.
-    </p>
-
-    <a
-      class="button"
-      href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
-      download>
-      Descargar kit completo (PDF)
+    <a class="button" href="about.html">
+      Conoce mi historia
     </a>
 
-    <p>
-      Material educativo gratuito de Healthy Gaming Habits.
-    </p>
+    <a class="button" href="resources.html">
+      Explora los recursos
+    </a>
+  </section>
 
-  </div>
+  <!-- FORMULARIO DE CONTACTO -->
 
-</section>
-
-<!-- MENSAJE PERSONAL -->
-
-<section>
-
-  <h2>Un mensaje de Fernando</h2>
-
-  <div class="message">
+  <section id="contacto">
+    <h2>Contacto y participación</h2>
 
     <p>
-      Yo sé que no siempre es fácil organizar
-      nuestro tiempo, especialmente cuando tenemos
-      clases, trabajo y otras responsabilidades.
+      ¿Quieres compartir una idea o hacer una pregunta
+      sobre Healthy Gaming Habits?
     </p>
 
     <p>
-      Como estudiante de Computer Science
-      que disfruta mucho de los videojuegos,
-      entiendo lo difícil que puede ser
-      encontrar ese balance.
+      Puedes utilizar este formulario para preparar
+      un mensaje relacionado con los hábitos saludables
+      y el uso responsable de los videojuegos.
     </p>
 
-    <p>
-      Por eso quiero motivar a otros jóvenes
-      a comenzar con pequeños cambios.
-      No tenemos que dejar de jugar videojuegos
-      para cumplir con nuestras metas.
-    </p>
+    <div class="contact-box">
 
-    <p>
-      Podemos disfrutar de nuestros pasatiempos
-      y también dedicar tiempo a nuestro futuro.
-    </p>
+      <form id="contactForm">
 
-    <p class="signature">
-      Fernando José Juliá Hernández
-    </p>
+        <label for="nombre">
+          Nombre (opcional)
+        </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          autocomplete="name"
+          placeholder="Escribe tu nombre"
+          maxlength="80">
 
-  </div>
+        <label for="correo">
+          Correo electrónico (opcional)
+        </label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          autocomplete="email"
+          placeholder="ejemplo@correo.com"
+          maxlength="120">
 
-  <a class="button" href="about.html">
-    Conoce mi historia
-  </a>
+        <label for="motivo">
+          ¿Por qué deseas participar?
+        </label>
+        <select
+          id="motivo"
+          name="motivo"
+          required>
+          <option value="">
+            Selecciona una opción
+          </option>
+          <option value="Compartir una idea">
+            Compartir una idea
+          </option>
+          <option value="Hacer una pregunta">
+            Hacer una pregunta
+          </option>
+          <option value="Compartir mi experiencia">
+            Compartir mi experiencia
+          </option>
+          <option value="Conocer más sobre el proyecto">
+            Conocer más sobre el proyecto
+          </option>
+        </select>
 
-  <a class="button" href="resources.html">
-    Explora los recursos
-  </a>
+        <label for="mensaje">
+          Mensaje o comentario
+        </label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Escribe aquí tu mensaje..."
+          maxlength="1500"
+          required></textarea>
 
-</section>
+        <p class="form-note">
+          Los campos marcados como obligatorios deben
+          completarse antes de preparar el mensaje.
+          Este formulario no envía ni guarda información.
+          Puedes copiar el mensaje preparado para
+          compartirlo por el medio que prefieras.
+        </p>
+
+        <div class="form-actions">
+          <button
+            class="button"
+            type="submit">
+            Preparar mi mensaje
+          </button>
+
+          <button
+            class="button"
+            type="reset">
+            Limpiar formulario
+          </button>
+        </div>
+
+      </form>
+
+      <p
+        id="formResult"
+        class="form-result"
+        role="status"
+        aria-live="polite"></p>
+
+      <div
+        id="messagePreview"
+        class="message-preview"
+        aria-label="Vista previa del mensaje preparado"></div>
+
+      <div
+        id="copyActions"
+        class="form-actions"
+        hidden>
+        <button
+          type="button"
+          class="button"
+          id="copyButton">
+          Copiar mensaje
+        </button>
+      </div>
+
+    </div>
+  </section>
 
 </main>
 
@@ -703,6 +887,76 @@ footer {
   <p>Creado por Fernando José Juliá Hernández.</p>
   <p>&copy; 2026 Healthy Gaming Habits</p>
 </footer>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const formResult = document.getElementById("formResult");
+  const messagePreview = document.getElementById("messagePreview");
+  const copyActions = document.getElementById("copyActions");
+  const copyButton = document.getElementById("copyButton");
+
+  let preparedMessage = "";
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) {
+      return;
+    }
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const motivo = document.getElementById("motivo").value;
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    if (mensaje.length === 0) {
+      formResult.textContent = "Por favor, escribe un mensaje.";
+      return;
+    }
+
+    preparedMessage =
+      "Healthy Gaming Habits - Contacto y participación\n\n" +
+      "Nombre: " + (nombre || "No indicado") + "\n" +
+      "Correo: " + (correo || "No indicado") + "\n" +
+      "Motivo: " + motivo + "\n\n" +
+      "Mensaje:\n" + mensaje;
+
+    messagePreview.textContent = preparedMessage;
+    messagePreview.classList.add("visible");
+    copyActions.hidden = false;
+
+    formResult.textContent =
+      "¡Tu mensaje está preparado! Puedes copiarlo y compartirlo.";
+
+    messagePreview.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+  });
+
+  copyButton.addEventListener("click", async function() {
+    if (!preparedMessage) {
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(preparedMessage);
+      formResult.textContent =
+        "¡Mensaje copiado! Ahora puedes pegarlo donde desees.";
+    } catch (error) {
+      formResult.textContent =
+        "No se pudo copiar automáticamente. Selecciona el texto de la vista previa y cópialo manualmente.";
+    }
+  });
+
+  contactForm.addEventListener("reset", function() {
+    preparedMessage = "";
+    messagePreview.textContent = "";
+    messagePreview.classList.remove("visible");
+    copyActions.hidden = true;
+    formResult.textContent = "";
+  });
+</script>
 
 </body>
 </html>
