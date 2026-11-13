@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conoce la importancia de mantener hábitos saludables al jugar videojuegos.">
+
   <title>Sobre la causa | Healthy Gaming Habits</title>
+
   <link rel="stylesheet" href="css/styles.css">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #10182d;
-      color: #f5f7ff;
+      color: white;
       line-height: 1.7;
     }
 
@@ -32,7 +35,9 @@
       margin: 0;
     }
 
-    header p { font-size: 1.2rem; }
+    header p {
+      font-size: 1.2rem;
+    }
 
     nav {
       display: flex;
@@ -51,7 +56,8 @@
       font-weight: bold;
     }
 
-    nav a:hover, nav a:focus-visible {
+    nav a:hover,
+    nav a:focus-visible {
       background: #67f1dc;
       color: #10182d;
     }
@@ -70,12 +76,32 @@
       text-align: center;
     }
 
-    h2 { color: #67f1dc; }
-    h3 { color: #67f1dc; }
+    h2, h3 {
+      color: #67f1dc;
+    }
+
+    .content-image {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 25px auto 10px;
+      border-radius: 18px;
+      border: 2px solid #67f1dc;
+    }
+
+    .image-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #e3e5ff;
+    }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
       gap: 18px;
       margin-top: 25px;
     }
@@ -98,22 +124,8 @@
       margin-top: 15px;
     }
 
-    .button:hover { background: #a6fff1; }
-
-    .content-image {
-      display: block;
-      width: 100%;
-      max-width: 850px;
-      height: auto;
-      margin: 25px auto 8px;
-      border-radius: 18px;
-      border: 2px solid #67f1dc;
-    }
-
-    .image-note {
-      font-size: 0.85rem;
-      font-style: italic;
-      color: #e3e5ff;
+    .button:hover {
+      background: #a6fff1;
     }
 
     footer {
@@ -141,6 +153,8 @@
 
 <main>
 
+  <!-- INTRODUCCION -->
+
   <section>
     <h2>¿De qué trata nuestra causa?</h2>
 
@@ -152,24 +166,37 @@
     </p>
 
     <p>
-      Muchos jóvenes utilizan los videojuegos para
-      divertirse, relajarse y compartir con sus amigos.
-      Sin embargo, también es importante dedicar tiempo
-      a los estudios, la familia, el ejercicio y el descanso.
+      Los videojuegos son una forma divertida de
+      entretenernos, aprender y compartir con amigos.
+      Pero también debemos dedicar tiempo a los estudios,
+      la familia, el ejercicio y el descanso.
+    </p>
+
+    <img
+      class="content-image"
+      src="images/Neon Gaming Setup Portrait.png"
+      alt="Espacio moderno de videojuegos con luces de colores"
+      loading="lazy">
+
+    <p class="image-note">
+      Imagen creada con inteligencia artificial.
     </p>
 
     <p>
       Nuestra meta no es que los jóvenes dejen de jugar,
       sino que aprendan a organizar su tiempo y
-      mantener un balance en sus actividades diarias.
+      mantener un balance entre los videojuegos
+      y sus responsabilidades.
     </p>
   </section>
 
+  <!-- IMPORTANCIA -->
+
   <section>
-    <h2>¿Por qué es importante?</h2>
+    <h2>¿Por qué es importante jugar con balance?</h2>
 
     <p>
-      Los videojuegos pueden ser una actividad positiva,
+      Jugar videojuegos puede ser una actividad positiva,
       pero pasar demasiado tiempo jugando sin descansar
       puede afectar nuestra rutina diaria.
     </p>
@@ -179,79 +206,88 @@
       <article class="card">
         <h3>Descanso</h3>
         <p>
-          Jugar hasta muy tarde puede reducir las horas
-          que dormimos y hacernos sentir cansados
-          al día siguiente.
+          Dormir bien es importante para tener energía
+          y poder concentrarnos durante el día.
         </p>
       </article>
 
       <article class="card">
         <h3>Estudios</h3>
         <p>
-          Si no organizamos nuestro tiempo, podemos
-          dejar las tareas para después y tener
-          dificultades con nuestras responsabilidades.
+          Debemos organizar nuestro tiempo para
+          completar las tareas y estudiar antes
+          de dedicar muchas horas a jugar.
         </p>
       </article>
 
       <article class="card">
         <h3>Actividad física</h3>
         <p>
-          Pasar muchas horas sentados puede reducir
-          el tiempo que dedicamos a movernos
-          y hacer ejercicio.
+          Hacer ejercicio y movernos durante el día
+          ayuda a mantener una vida más activa.
         </p>
       </article>
 
       <article class="card">
         <h3>Vida social</h3>
         <p>
-          Es bueno compartir con amigos en línea,
+          Compartir con amigos en línea es divertido,
           pero también debemos dedicar tiempo
-          a nuestra familia y a otras actividades.
+          a nuestra familia y amigos en persona.
         </p>
       </article>
 
     </div>
   </section>
 
+  <!-- INFOGRAFIA -->
+
   <section>
-    <h2>El balance es la clave</h2>
+    <h2>Hábitos saludables para gamers</h2>
 
     <p>
-      Tener hábitos saludables no significa
-      abandonar nuestros videojuegos favoritos.
-      Significa aprender cuándo jugar,
-      cuándo descansar y cómo cumplir
-      con nuestras responsabilidades.
+      Podemos disfrutar de nuestros videojuegos
+      favoritos sin descuidar nuestra salud
+      y nuestras responsabilidades.
+    </p>
+
+    <p>
+      Esta infografía presenta ideas para mantener
+      un mejor balance entre jugar, estudiar,
+      descansar y hacer otras actividades.
     </p>
 
     <img
       class="content-image"
-      src="images/gaming-balance.png"
-      alt="Ilustración sobre el balance entre videojuegos y hábitos saludables"
-      width="900"
+      src="images/Healthy Gaming Habits Infographic.png"
+      alt="Infografía sobre hábitos saludables para jugadores de videojuegos"
       loading="lazy">
 
     <p class="image-note">
-      Imagen creada con inteligencia artificial.
+      Infografía creada con inteligencia artificial.
     </p>
   </section>
+
+  <!-- MISION -->
 
   <section>
     <h2>Nuestra misión</h2>
 
     <p>
       Queremos motivar a los jóvenes a disfrutar
-      de los videojuegos de manera responsable,
-      promoviendo el descanso, la actividad física,
-      la organización del tiempo y el bienestar.
+      de los videojuegos de manera responsable.
     </p>
 
     <p>
-      Creemos que podemos disfrutar de la tecnología
+      Creemos que es posible disfrutar de la tecnología
       y al mismo tiempo cuidar nuestra salud,
       nuestros estudios y nuestras relaciones.
+    </p>
+
+    <p>
+      Lo importante es encontrar tiempo para todo
+      y recordar que nuestra vida también existe
+      fuera de la pantalla.
     </p>
 
     <a class="button" href="help.html">
@@ -263,7 +299,7 @@
 
 <footer>
   <p>Healthy Gaming Habits</p>
-  <p>Proyecto educativo de concienciación sobre hábitos saludables.</p>
+  <p>Proyecto educativo sobre hábitos saludables.</p>
   <p>Creado por Fernando José Juliá Hernández.</p>
   <p>&copy; 2026 Healthy Gaming Habits</p>
 </footer>
