@@ -4,110 +4,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conoce la importancia de mantener un balance saludable entre los videojuegos, los estudios, el trabajo y la vida social.">
+  <meta name="description" content="Conoce la historia de Fernando y la importancia de mantener un balance saludable entre los videojuegos, los estudios, el trabajo y la vida social.">
 
   <title>Sobre la causa | Healthy Gaming Habits</title>
-
   <link rel="stylesheet" href="css/styles.css">
 
   <style>
-    .contenido-about {
-      max-width: 1000px;
-      margin: 35px auto;
-      padding: 20px;
+    * {
+      box-sizing: border-box;
     }
 
-    .seccion-about {
-      background: linear-gradient(135deg, #235ca9, #5444a5);
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #10182d;
+      color: #f5f7ff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111b34, #283665);
+      padding: 45px 20px 30px;
+      text-align: center;
+      border-bottom: 3px solid #67f1dc;
+    }
+
+    header h1 {
+      color: #67f1dc;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    nav a {
       color: white;
-      border: 1px solid #75e7dc;
+      text-decoration: none;
+      border: 2px solid #67f1dc;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: #67f1dc;
+      color: #10182d;
+    }
+
+    main {
+      width: min(1050px, 94%);
+      margin: 40px auto;
+    }
+
+    section {
+      background: linear-gradient(135deg, #244b96, #46317d);
+      border: 1px solid #7c91e6;
       border-radius: 22px;
-      padding: 35px;
+      padding: 35px 25px;
       margin-bottom: 30px;
       text-align: center;
     }
 
-    .seccion-about h2 {
-      color: #75f2df;
-      font-size: 1.8rem;
-      margin-bottom: 22px;
+    h2, h3 {
+      color: #67f1dc;
     }
 
-    .seccion-about p {
-      line-height: 1.8;
-      font-size: 1.05rem;
-      margin-bottom: 20px;
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
-    .imagen-contenido {
-      display: block;
-      max-width: 100%;
-      width: 750px;
-      height: auto;
-      margin: 25px auto 10px;
-      border-radius: 18px;
-      border: 2px solid #75e7dc;
+    section p {
+      max-width: 850px;
+      margin: 16px auto;
     }
 
-    .imagen-vertical {
-      width: 430px;
-    }
-
-    .nota-imagen {
-      font-size: 0.85rem !important;
-      font-style: italic;
-      color: #e0e5f5;
-      margin-top: 10px;
-    }
+    /* PRESENTACION PERSONAL DE FERNANDO */
 
     .presentacion-personal {
-      background: rgba(12, 25, 55, 0.35);
-      padding: 25px;
-      border-radius: 16px;
+      background: linear-gradient(135deg, #14264c, #33225d);
+      border: 2px solid #67f1dc;
+      border-radius: 20px;
+      padding: 30px 25px;
+      margin: 30px auto 10px;
+      max-width: 900px;
+      box-shadow: 0 0 22px rgba(103, 241, 220, 0.18);
+    }
+
+    .presentacion-personal h3 {
+      font-size: 1.7rem;
+      margin-top: 0;
+    }
+
+    .presentacion-personal p {
+      font-size: 1.05rem;
+    }
+
+    .firma {
+      color: #67f1dc;
+      font-weight: bold;
       margin-top: 25px;
     }
 
-    .lista-habitos {
-      text-align: left;
+    /* TARJETAS INFORMATIVAS */
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: rgba(14, 22, 49, 0.75);
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid #7886d7;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    /* IMAGENES */
+
+    .content-image {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 25px auto 8px;
+      border-radius: 18px;
+      border: 2px solid #67f1dc;
+    }
+
+    .portrait-image {
+      max-width: 430px;
+    }
+
+    .image-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #e3e5ff;
+    }
+
+    /* LISTA DE HABITOS */
+
+    .habits-list {
       max-width: 650px;
-      margin: 20px auto;
-      line-height: 2;
+      text-align: left;
+      margin: 25px auto;
+      padding-left: 30px;
     }
 
-    .lista-habitos li {
-      margin-bottom: 10px;
+    .habits-list li {
+      margin-bottom: 12px;
     }
 
-    .boton-about {
+    /* BOTONES */
+
+    .button {
       display: inline-block;
-      padding: 14px 28px;
-      background: #72e8d8;
-      color: #12263a;
-      text-decoration: none;
+      background: #67f1dc;
+      color: #10213a;
+      padding: 12px 24px;
+      margin: 12px 8px;
       border-radius: 30px;
+      text-decoration: none;
       font-weight: bold;
-      margin: 12px;
     }
 
-    .boton-about:hover {
-      background: #ffffff;
+    .button:hover {
+      background: #a6fff1;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #ffe27a;
+      outline-offset: 4px;
+    }
+
+    footer {
+      background: #0a1122;
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 2px solid #67f1dc;
     }
 
     @media (max-width: 600px) {
-      .contenido-about {
-        padding: 12px;
+      section {
+        padding: 25px 16px;
       }
 
-      .seccion-about {
+      .presentacion-personal {
         padding: 22px 16px;
       }
 
-      .seccion-about h2 {
-        font-size: 1.5rem;
-      }
-
-      .imagen-vertical {
-        width: 100%;
+      .portrait-image {
+        max-width: 100%;
       }
     }
   </style>
@@ -115,267 +219,262 @@
 
 <body>
 
-  <header>
-    <h1>Healthy Gaming Habits</h1>
+<header>
+  <h1>Healthy Gaming Habits</h1>
+  <p>Juega, Disfruta y Mantén un Balance</p>
 
-    <p>Juega, Disfruta y Mantén un Balance</p>
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="about.html" aria-current="page">Sobre la causa</a>
+    <a href="help.html">Cómo ayudar</a>
+    <a href="resources.html">Recursos</a>
+  </nav>
+</header>
 
-    <nav aria-label="Navegación principal">
-      <a href="index.html">Inicio</a>
-      <a href="about.html" aria-current="page">Sobre la causa</a>
-      <a href="help.html">Cómo ayudar</a>
-      <a href="resources.html">Recursos</a>
-    </nav>
-  </header>
+<main>
 
-  <main class="contenido-about">
+  <!-- SECCION 1: INTRODUCCION -->
 
-    <!-- SECCIÓN 1: DE QUÉ TRATA -->
+  <section>
+    <h2>¿De qué trata Healthy Gaming Habits?</h2>
 
-    <section class="seccion-about">
+    <p>
+      Healthy Gaming Habits es un proyecto educativo
+      que busca crear conciencia sobre la importancia
+      de mantener hábitos saludables mientras
+      disfrutamos de los videojuegos.
+    </p>
 
-      <h2>¿De qué trata Healthy Gaming Habits?</h2>
+    <p>
+      Los videojuegos son una forma divertida de
+      entretenernos, aprender y compartir con amigos.
+      Sin embargo, también debemos dedicar tiempo
+      a nuestros estudios, el trabajo, la familia,
+      el ejercicio y el descanso.
+    </p>
+
+    <p>
+      El propósito de esta página es demostrar que
+      podemos disfrutar de nuestros videojuegos
+      favoritos sin descuidar otras áreas importantes
+      de nuestra vida.
+    </p>
+
+    <!-- PRESENTACION PERSONAL DESTACADA -->
+
+    <div class="presentacion-personal">
+
+      <h3>¿Por qué escogí este tema?</h3>
 
       <p>
-        Healthy Gaming Habits es una página web
-        creada para promover hábitos saludables
-        entre los jóvenes que disfrutan de los
-        videojuegos.
+        Mi nombre es Fernando José Juliá Hernández
+        y soy estudiante de Computer Science en la
+        Universidad Interamericana de Puerto Rico.
+        Escogí este tema porque personalmente he
+        tenido dificultades para encontrar un balance
+        entre mi pasión por los videojuegos, mis
+        estudios, el trabajo y mi vida social.
       </p>
 
       <p>
-        Los videojuegos son una forma divertida
-        de entretenimiento. Nos permiten compartir
-        con amigos, aprender nuevas habilidades
-        y disfrutar de nuestro tiempo libre.
-        Sin embargo, es importante mantener
-        un balance con nuestras responsabilidades.
+        A veces no es fácil organizar mi tiempo para
+        cumplir con todas mis responsabilidades y
+        también disfrutar de las cosas que me gustan.
+        Como estudiante que también trabaja, sé que
+        encontrar ese balance puede ser complicado.
       </p>
 
       <p>
-        El propósito de esta página es ayudar
-        a los jóvenes a comprender que pueden
-        disfrutar de los videojuegos sin dejar
-        a un lado sus estudios, su salud,
-        su familia y su vida social.
+        Por eso decidí crear Healthy Gaming Habits,
+        para compartir mi experiencia y ayudar a
+        otros jóvenes que enfrentan situaciones
+        parecidas. Mi intención no es decir que
+        debemos dejar de jugar videojuegos, sino
+        demostrar que podemos disfrutarlos mientras
+        cuidamos nuestra salud, cumplimos con
+        nuestras responsabilidades y trabajamos
+        por nuestras metas.
       </p>
 
-      <div class="presentacion-personal">
+      <p class="firma">
+        Fernando José Juliá Hernández
+      </p>
 
-        <h2>¿Por qué escogí este tema?</h2>
+    </div>
+  </section>
 
+  <!-- SECCION 2: VIDEOJUEGOS -->
+
+  <section>
+    <h2>Los videojuegos y nuestra vida diaria</h2>
+
+    <p>
+      Jugar videojuegos puede ser una actividad
+      positiva cuando sabemos organizar nuestro
+      tiempo. Podemos divertirnos, desarrollar
+      habilidades y compartir con amigos.
+    </p>
+
+    <p>
+      Sin embargo, cuando dedicamos demasiado
+      tiempo a jugar sin descansar, podemos
+      dejar de lado otras responsabilidades.
+    </p>
+
+    <p>
+      Es importante encontrar tiempo para
+      estudiar, trabajar, descansar, hacer
+      ejercicio y compartir con las personas
+      que son importantes para nosotros.
+    </p>
+
+    <img
+      class="content-image portrait-image"
+      src="images/Neon%20Gaming%20Setup%20Portrait.png"
+      alt="Espacio moderno para videojuegos con luces de colores"
+      loading="lazy">
+
+    <p class="image-note">
+      Imagen creada con inteligencia artificial.
+    </p>
+  </section>
+
+  <!-- SECCION 3: IMPORTANCIA -->
+
+  <section>
+    <h2>¿Por qué es importante mantener un balance?</h2>
+
+    <p>
+      Mantener un balance nos ayuda a cuidar
+      nuestra salud, organizar mejor nuestro
+      tiempo y cumplir con nuestras metas.
+    </p>
+
+    <div class="cards">
+
+      <article class="card">
+        <h3>Descanso</h3>
         <p>
-          Mi nombre es Fernando José Juliá Hernández
-          y soy estudiante de Computer Science.
-          Escogí este tema porque personalmente
-          he tenido dificultades para encontrar
-          un balance entre mi pasión por los
-          videojuegos, mis estudios, el trabajo
-          y mi vida social.
+          Dormir bien nos ayuda a tener energía
+          y concentrarnos durante el día.
         </p>
+      </article>
 
+      <article class="card">
+        <h3>Estudios</h3>
         <p>
-          A veces no es fácil organizar el tiempo
-          para cumplir con todas mis responsabilidades
-          y también disfrutar de las cosas que
-          me gustan.
+          Organizar nuestro tiempo nos permite
+          completar tareas y prepararnos mejor
+          para nuestras clases.
         </p>
+      </article>
 
+      <article class="card">
+        <h3>Actividad física</h3>
         <p>
-          Por eso, decidí crear esta página para
-          compartir la importancia de desarrollar
-          hábitos saludables y demostrar que podemos
-          disfrutar de los videojuegos sin descuidar
-          otras áreas importantes de nuestra vida.
+          Hacer ejercicio y movernos durante
+          el día ayuda a mantenernos activos.
         </p>
+      </article>
 
-      </div>
+      <article class="card">
+        <h3>Vida social</h3>
+        <p>
+          Podemos compartir con amigos en línea,
+          pero también es importante pasar tiempo
+          con familiares y amigos en persona.
+        </p>
+      </article>
 
-    </section>
+    </div>
+  </section>
 
-    <!-- SECCIÓN 2: VIDEOJUEGOS Y BALANCE -->
+  <!-- SECCION 4: INFOGRAFIA -->
 
-    <section class="seccion-about">
+  <section>
+    <h2>Hábitos saludables para gamers</h2>
 
-      <h2>Los videojuegos y nuestra vida diaria</h2>
+    <p>
+      No tenemos que dejar de jugar videojuegos
+      para mantener una vida saludable.
+      Lo importante es establecer prioridades
+      y practicar buenos hábitos.
+    </p>
 
-      <p>
-        Jugar videojuegos puede ser una actividad
-        positiva cuando sabemos organizar nuestro
-        tiempo. El problema comienza cuando
-        dedicamos demasiado tiempo a jugar y
-        dejamos de cumplir con otras actividades.
-      </p>
+    <img
+      class="content-image"
+      src="images/Healthy%20Gaming%20Habits%20Infographic.png"
+      alt="Infografía sobre hábitos saludables para jugadores de videojuegos"
+      loading="lazy">
 
-      <p>
-        Es importante encontrar tiempo para
-        estudiar, trabajar, descansar,
-        hacer ejercicio y compartir con
-        nuestros amigos y familiares.
-      </p>
+    <p class="image-note">
+      Infografía creada con inteligencia artificial.
+    </p>
 
-      <img
-        class="imagen-contenido imagen-vertical"
-        src="images/Neon Gaming Setup Portrait.png"
-        alt="Joven disfrutando de los videojuegos en un espacio organizado con libros y equipo de computadora"
-        loading="lazy"
-      >
+    <ul class="habits-list">
+      <li>Organizar el tiempo para estudiar y trabajar.</li>
+      <li>Tomar descansos durante las sesiones de juego.</li>
+      <li>Dormir las horas necesarias.</li>
+      <li>Hacer ejercicio y mantenernos activos.</li>
+      <li>Compartir con familiares y amigos.</li>
+      <li>Disfrutar de los videojuegos con moderación.</li>
+    </ul>
+  </section>
 
-      <p class="nota-imagen">
-        Imagen creada con inteligencia artificial.
-      </p>
+  <!-- SECCION 5: MENSAJE PERSONAL -->
 
-    </section>
+  <section>
+    <h2>Mi mensaje para otros jóvenes</h2>
 
-    <!-- SECCIÓN 3: IMPORTANCIA DEL BALANCE -->
-
-    <section class="seccion-about">
-
-      <h2>¿Por qué es importante mantener un balance?</h2>
-
-      <p>
-        Mantener un balance nos ayuda a organizar
-        mejor nuestro tiempo, cuidar nuestra salud
-        y disfrutar de diferentes actividades.
-      </p>
-
-      <p>
-        Cuando tenemos buenos hábitos podemos
-        dedicar tiempo a los videojuegos sin
-        afectar nuestras responsabilidades
-        académicas, laborales y personales.
-      </p>
-
-      <h2>El balance es la clave</h2>
+    <div class="presentacion-personal">
 
       <p>
-        Tener hábitos saludables no significa
-        abandonar nuestros videojuegos favoritos.
-        Significa aprender cuándo jugar,
-        cuándo descansar y cómo cumplir
-        con nuestras responsabilidades.
-      </p>
-
-      <img
-        class="imagen-contenido"
-        src="images/Healthy Gaming Habits Infographic.png"
-        alt="Infografía sobre videojuegos, descanso, ejercicio, estudios, familia y organización del tiempo"
-        loading="lazy"
-      >
-
-      <p class="nota-imagen">
-        Infografía creada con inteligencia artificial.
-      </p>
-
-    </section>
-
-    <!-- SECCIÓN 4: HÁBITOS SALUDABLES -->
-
-    <section class="seccion-about">
-
-      <h2>Hábitos que podemos practicar</h2>
-
-      <p>
-        Existen diferentes maneras de disfrutar
-        de los videojuegos y mantener una
-        rutina saludable.
-      </p>
-
-      <ul class="lista-habitos">
-        <li>
-          Organizar nuestro tiempo para estudiar
-          y completar las asignaciones.
-        </li>
-
-        <li>
-          Tomar descansos mientras jugamos.
-        </li>
-
-        <li>
-          Dormir las horas necesarias.
-        </li>
-
-        <li>
-          Realizar actividades físicas.
-        </li>
-
-        <li>
-          Compartir tiempo con familiares
-          y amigos.
-        </li>
-
-        <li>
-          Cumplir con nuestras responsabilidades
-          del trabajo y del hogar.
-        </li>
-
-        <li>
-          Disfrutar de los videojuegos
-          con moderación.
-        </li>
-      </ul>
-
-      <p>
-        Lo importante no es dejar de jugar,
-        sino aprender a disfrutar de nuestros
-        pasatiempos de una manera responsable.
-      </p>
-
-    </section>
-
-    <!-- SECCIÓN 5: MENSAJE FINAL -->
-
-    <section class="seccion-about">
-
-      <h2>Mi mensaje para otros jóvenes</h2>
-
-      <p>
-        Sé que no siempre es fácil encontrar
-        un balance entre los videojuegos y
-        nuestras responsabilidades.
-        Yo también estoy aprendiendo a
-        organizar mejor mi tiempo.
+        Como estudiante y alguien que disfruta
+        mucho de los videojuegos, entiendo que
+        encontrar un balance no siempre es fácil.
+        Todavía estoy aprendiendo a organizar
+        mejor mi tiempo entre la universidad,
+        el trabajo, mis amigos y mis pasatiempos.
       </p>
 
       <p>
-        Mi consejo es que no tenemos que
-        dejar de hacer las cosas que nos gustan.
-        Lo importante es establecer prioridades
-        y dedicar tiempo a diferentes
-        actividades que son importantes
-        para nuestro futuro.
-      </p>
-
-      <p>
+        Quiero demostrar que no tenemos que
+        dejar de hacer las cosas que nos gustan
+        para cumplir con nuestras responsabilidades.
         Podemos disfrutar de los videojuegos
-        y al mismo tiempo tener éxito
-        en nuestros estudios, nuestro trabajo
-        y nuestra vida personal.
+        y al mismo tiempo trabajar por nuestras
+        metas y nuestro futuro.
       </p>
 
-      <a class="boton-about" href="help.html">
-        Cómo ayudar
-      </a>
+      <p>
+        Lo importante es aprender a establecer
+        prioridades y mantener un balance
+        saludable en nuestra vida diaria.
+      </p>
 
-      <a class="boton-about" href="resources.html">
-        Ver recursos
-      </a>
+      <p class="firma">
+        Fernando José Juliá Hernández
+      </p>
 
-    </section>
+    </div>
 
-  </main>
+    <a class="button" href="help.html">
+      Descubre cómo ayudar
+    </a>
 
-  <footer>
-    <p>
-      Healthy Gaming Habits |
-      Proyecto educativo de Fernando José Juliá Hernández
-    </p>
+    <a class="button" href="resources.html">
+      Ver recursos
+    </a>
+  </section>
 
-    <p>
-      Promoviendo un balance saludable
-      entre los videojuegos y la vida diaria.
-    </p>
-  </footer>
+</main>
+
+<footer>
+  <p>Healthy Gaming Habits</p>
+  <p>Proyecto educativo sobre hábitos saludables.</p>
+  <p>Creado por Fernando José Juliá Hernández.</p>
+  <p>&copy; 2026 Healthy Gaming Habits</p>
+</footer>
 
 </body>
 </html>
