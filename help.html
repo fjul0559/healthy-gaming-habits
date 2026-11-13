@@ -1,6 +1,7 @@
- 
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 <title>Cómo ayudar | Healthy Gaming Habits</title>
 
 <style>
+
 * {
   box-sizing: border-box;
 }
@@ -20,18 +22,25 @@ body {
   line-height: 1.7;
 }
 
+/* ENCABEZADO */
+
 header {
-  background: linear-gradient(135deg,#142447,#34316c);
-  padding: 40px 20px;
+  background: linear-gradient(135deg, #142447, #34316c);
   text-align: center;
+  padding: 40px 20px;
   border-bottom: 3px solid #62ead8;
 }
 
 header h1 {
   color: #62ead8;
   font-size: 36px;
-  margin-bottom: 10px;
 }
+
+header p {
+  font-size: 19px;
+}
+
+/* MENU */
 
 nav {
   margin-top: 25px;
@@ -54,6 +63,8 @@ nav a[aria-current="page"] {
   color: #142447;
 }
 
+/* CONTENIDO */
+
 main {
   max-width: 1050px;
   margin: 35px auto;
@@ -61,7 +72,7 @@ main {
 }
 
 section {
-  background: linear-gradient(135deg,#214b91,#433078);
+  background: linear-gradient(135deg, #214b91, #433078);
   border: 1px solid #7786dc;
   border-radius: 22px;
   padding: 35px 25px;
@@ -80,7 +91,8 @@ h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 25px;
 }
@@ -112,6 +124,8 @@ h3 {
   padding: 25px;
 }
 
+/* BOTONES */
+
 .button {
   display: inline-block;
   background: #62ead8;
@@ -137,7 +151,7 @@ a:focus-visible {
 .download-card {
   background: #f7f9ff;
   color: #1b294b;
-  padding: 20px;
+  padding: 22px;
   border-radius: 20px;
 }
 
@@ -149,59 +163,74 @@ a:focus-visible {
   color: #34446b;
 }
 
-.document-preview {
-  width: 100%;
-  height: 390px;
+/* VISTAS PREVIAS */
+
+.paper {
+  background: #ffffff;
+  color: #263454;
+  padding: 20px 14px;
+  border-radius: 12px;
   border: 1px solid #cbd3e5;
-  border-radius: 12px;
-  background: white;
-  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
   margin: 20px 0;
-}
-
-.document-preview iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* VISTA PREVIA ALTERNATIVA */
-
-.preview-fallback {
-  display: none;
-  background: white;
-  color: #233253;
-  padding: 20px;
-  border-radius: 12px;
   text-align: left;
 }
 
-.preview-fallback h4 {
+.paper h4 {
   text-align: center;
-  color: #243f88;
+  color: #253e83;
+  margin: 5px 0 15px;
+  font-size: 17px;
 }
 
-.preview-fallback table {
-  border-collapse: collapse;
-  width: 100%;
+.paper-subtitle {
+  text-align: center;
   font-size: 12px;
+  color: #586781;
+  margin-bottom: 15px;
 }
 
-.preview-fallback th,
-.preview-fallback td {
-  border: 1px solid #cbd3e5;
-  padding: 8px 3px;
+.habit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.habit-table th,
+.habit-table td {
+  border: 1px solid #cad5e7;
+  padding: 7px 2px;
   text-align: center;
 }
 
-.preview-fallback th {
-  background: #e4efff;
+.habit-table th {
+  background: #dff4f0;
+  color: #233b66;
 }
 
-.preview-fallback .line {
-  border-bottom: 1px solid #abb9d0;
-  height: 30px;
-  margin: 12px 0;
+.habit-table td:first-child,
+.habit-table th:first-child {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.habit-table td {
+  height: 29px;
+}
+
+.reflection-item {
+  margin-bottom: 17px;
+}
+
+.reflection-item strong {
+  display: block;
+  font-size: 13px;
+  color: #253e83;
+}
+
+.write-line {
+  height: 25px;
+  border-bottom: 1px solid #c5d0e3;
 }
 
 .kit-box {
@@ -211,6 +240,8 @@ a:focus-visible {
   padding: 25px;
   margin-top: 30px;
 }
+
+/* MENSAJE */
 
 .message {
   background: #152447;
@@ -226,6 +257,8 @@ a:focus-visible {
   font-weight: bold;
 }
 
+/* PIE DE PAGINA */
+
 footer {
   background: #0a1122;
   border-top: 2px solid #62ead8;
@@ -233,7 +266,7 @@ footer {
   text-align: center;
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
   header h1 {
     font-size: 28px;
   }
@@ -242,10 +275,15 @@ footer {
     padding: 25px 15px;
   }
 
-  .document-preview {
-    height: 330px;
+  .paper {
+    padding: 12px 8px;
+  }
+
+  .habit-table {
+    font-size: 9px;
   }
 }
+
 </style>
 </head>
 
@@ -268,12 +306,12 @@ footer {
 <!-- INTRODUCCION -->
 
 <section>
+
   <h2>¿Cómo podemos ayudar?</h2>
 
   <p>
-    Todos podemos ayudar a promover hábitos
-    saludables entre las personas que disfrutan
-    de los videojuegos.
+    Todos podemos ayudar a promover hábitos saludables
+    entre las personas que disfrutan de los videojuegos.
   </p>
 
   <p>
@@ -287,11 +325,13 @@ footer {
     Con pequeños cambios en nuestra rutina
     podemos lograr un mejor balance.
   </p>
+
 </section>
 
 <!-- CONSEJOS -->
 
 <section>
+
   <h2>Pequeñas acciones que hacen la diferencia</h2>
 
   <div class="cards">
@@ -328,28 +368,28 @@ footer {
       <p>
         Disfruta de tus amistades en línea,
         pero también dedica tiempo
-        a compartir con familiares y amigos
-        en persona.
+        a compartir con familiares y amigos en persona.
       </p>
     </article>
 
   </div>
+
 </section>
 
 <!-- AYUDAR A OTROS -->
 
 <section>
+
   <h2>¿Cómo ayudar a un amigo o familiar?</h2>
 
   <p>
-    A veces conocemos personas que pasan muchas
-    horas jugando videojuegos y tienen dificultades
+    A veces conocemos personas que pasan muchas horas
+    jugando videojuegos y tienen dificultades
     para organizar su tiempo.
   </p>
 
   <p>
-    Podemos ayudarlas de una manera positiva
-    y respetuosa.
+    Podemos ayudarlas de una manera positiva y respetuosa.
   </p>
 
   <ol class="steps">
@@ -379,16 +419,17 @@ footer {
 
     <li>
       <strong>Ofrece apoyo:</strong>
-      Recuerda que cambiar una rutina
-      puede tomar tiempo.
+      Recuerda que cambiar una rutina puede tomar tiempo.
     </li>
 
   </ol>
+
 </section>
 
 <!-- RETO DE SIETE DIAS -->
 
 <section>
+
   <h2>Reto de 7 días: Encuentra tu balance</h2>
 
   <p>
@@ -397,6 +438,7 @@ footer {
   </p>
 
   <div class="challenge">
+
     <h3>¡Acepta el reto!</h3>
 
     <ul class="challenge-list">
@@ -406,14 +448,16 @@ footer {
       <li><strong>Día 4:</strong> Dedica tiempo a una actividad física.</li>
       <li><strong>Día 5:</strong> Comparte con familiares o amigos fuera de línea.</li>
       <li><strong>Día 6:</strong> Organiza tus responsabilidades antes de jugar.</li>
-      <li><strong>Día 7:</strong> Piensa en los cambios que lograste y cuáles quieres continuar.</li>
+      <li><strong>Día 7:</strong> Reflexiona sobre los cambios que lograste.</li>
     </ul>
 
     <p>
-      Recuerda que el objetivo no es dejar de jugar,
-      sino aprender a disfrutar de una manera más saludable.
+      El objetivo no es dejar de jugar,
+      sino disfrutar de una manera más saludable.
     </p>
+
   </div>
+
 </section>
 
 <!-- HERRAMIENTAS GRATUITAS -->
@@ -429,8 +473,8 @@ footer {
   </p>
 
   <p>
-    Puedes ver una vista previa de cada documento
-    antes de descargarlo.
+    Aquí puedes ver cómo son estas herramientas
+    antes de descargarlas.
   </p>
 
   <div class="cards">
@@ -441,25 +485,80 @@ footer {
 
       <h3>Calendario de hábitos saludables</h3>
 
-      <div class="document-preview">
-        <iframe
-          src="downloads/Calendario_Habitos_Saludables%20%282%29.pdf#toolbar=0"
-          title="Vista previa del calendario de hábitos saludables">
-        </iframe>
+      <div class="paper">
+
+        <h4>Mi calendario de hábitos</h4>
+
+        <p class="paper-subtitle">
+          Healthy Gaming Habits — Reto de 7 días
+        </p>
+
+        <table class="habit-table">
+
+          <thead>
+            <tr>
+              <th>Hábito</th>
+              <th>L</th>
+              <th>M</th>
+              <th>M</th>
+              <th>J</th>
+              <th>V</th>
+              <th>S</th>
+              <th>D</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Estudiar</td>
+              <td>□</td><td>□</td><td>□</td>
+              <td>□</td><td>□</td><td>□</td><td>□</td>
+            </tr>
+
+            <tr>
+              <td>Descansar</td>
+              <td>□</td><td>□</td><td>□</td>
+              <td>□</td><td>□</td><td>□</td><td>□</td>
+            </tr>
+
+            <tr>
+              <td>Ejercicio</td>
+              <td>□</td><td>□</td><td>□</td>
+              <td>□</td><td>□</td><td>□</td><td>□</td>
+            </tr>
+
+            <tr>
+              <td>Tiempo social</td>
+              <td>□</td><td>□</td><td>□</td>
+              <td>□</td><td>□</td><td>□</td><td>□</td>
+            </tr>
+
+            <tr>
+              <td>Juego balanceado</td>
+              <td>□</td><td>□</td><td>□</td>
+              <td>□</td><td>□</td><td>□</td><td>□</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <p class="paper-subtitle">
+          Marca cada día que cumplas con tus hábitos.
+        </p>
+
       </div>
 
       <p>
         Utiliza este calendario para marcar tus hábitos
-        durante siete días. Lleva un registro de tus
-        estudios, trabajo, descanso, ejercicio
-        y tiempo de juego.
+        durante siete días y observar tu progreso.
       </p>
 
       <a
         class="button"
         href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
         download>
-        Descargar calendario PDF
+        Descargar calendario (PDF)
       </a>
 
     </article>
@@ -470,24 +569,50 @@ footer {
 
       <h3>Checklist y reflexión personal</h3>
 
-      <div class="document-preview">
-        <iframe
-          src="downloads/Checklist_Reflexion_Personal%20%281%29.pdf#toolbar=0"
-          title="Vista previa del checklist y reflexión personal">
-        </iframe>
+      <div class="paper">
+
+        <h4>Mi reflexión semanal</h4>
+
+        <p class="paper-subtitle">
+          Healthy Gaming Habits — Weekly Check-In
+        </p>
+
+        <div class="reflection-item">
+          <strong>¿Organicé bien mi tiempo?</strong>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+
+        <div class="reflection-item">
+          <strong>¿Qué hábito logré mejorar?</strong>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+
+        <div class="reflection-item">
+          <strong>¿Qué fue lo más difícil?</strong>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+
+        <div class="reflection-item">
+          <strong>¿Qué quiero mejorar?</strong>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+
       </div>
 
       <p>
         Completa esta hoja para evaluar tus hábitos,
-        identificar tus logros y pensar en las cosas
-        que puedes mejorar durante la próxima semana.
+        identificar tus logros y establecer nuevas metas.
       </p>
 
       <a
         class="button"
         href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
         download>
-        Descargar checklist PDF
+        Descargar checklist (PDF)
       </a>
 
     </article>
@@ -510,13 +635,11 @@ footer {
       class="button"
       href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
       download>
-      Descargar kit completo PDF
+      Descargar kit completo (PDF)
     </a>
 
     <p>
-      Estos materiales son gratuitos
-      y están diseñados para ayudarte
-      a desarrollar hábitos saludables.
+      Material educativo gratuito de Healthy Gaming Habits.
     </p>
 
   </div>
@@ -526,6 +649,7 @@ footer {
 <!-- MENSAJE PERSONAL -->
 
 <section>
+
   <h2>Un mensaje de Fernando</h2>
 
   <div class="message">
