@@ -1,257 +1,252 @@
-
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"
-        content="Consejos y herramientas gratuitas para mantener un balance saludable entre los videojuegos, los estudios, el trabajo y la vida social.">
+<title>Cómo ayudar | Healthy Gaming Habits</title>
 
-  <title>Cómo ayudar | Healthy Gaming Habits</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <link rel="stylesheet" href="css/styles.css">
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #10182d;
+  color: white;
+  line-height: 1.7;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+header {
+  background: linear-gradient(135deg,#142447,#34316c);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid #62ead8;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #10182d;
-      color: #f5f7ff;
-      line-height: 1.7;
-    }
+header h1 {
+  color: #62ead8;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
 
-    header {
-      background: linear-gradient(135deg, #111b34, #283665);
-      padding: 45px 20px 30px;
-      text-align: center;
-      border-bottom: 3px solid #67f1dc;
-    }
+nav {
+  margin-top: 25px;
+}
 
-    header h1 {
-      color: #67f1dc;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      margin: 0;
-    }
+nav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 18px;
+  border: 2px solid #62ead8;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    header p {
-      font-size: 1.2rem;
-    }
+nav a:hover,
+nav a[aria-current="page"] {
+  background: #62ead8;
+  color: #142447;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
-    }
+main {
+  max-width: 1050px;
+  margin: 35px auto;
+  padding: 0 15px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      border: 2px solid #67f1dc;
-      border-radius: 30px;
-      padding: 10px 20px;
-      font-weight: bold;
-    }
+section {
+  background: linear-gradient(135deg,#214b91,#433078);
+  border: 1px solid #7786dc;
+  border-radius: 22px;
+  padding: 35px 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-    nav a:hover,
-    nav a:focus-visible,
-    nav a[aria-current="page"] {
-      background: #67f1dc;
-      color: #10182d;
-    }
+h2 {
+  color: #62ead8;
+  font-size: 29px;
+}
 
-    main {
-      width: min(1050px, 94%);
-      margin: 40px auto;
-    }
+h3 {
+  color: #62ead8;
+}
 
-    section {
-      background: linear-gradient(135deg, #244b96, #46317d);
-      border: 1px solid #7c91e6;
-      border-radius: 22px;
-      padding: 35px 25px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
 
-    h2, h3 {
-      color: #67f1dc;
-    }
+.card {
+  background: #17264b;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #7888d9;
+}
 
-    h2 {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-    }
+.steps,
+.challenge-list {
+  max-width: 700px;
+  margin: 25px auto;
+  text-align: left;
+  padding-left: 30px;
+}
 
-    section p {
-      max-width: 850px;
-      margin: 16px auto;
-    }
+.steps li,
+.challenge-list li {
+  margin-bottom: 14px;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
-      gap: 22px;
-      margin-top: 25px;
-    }
+.challenge {
+  background: #17244c;
+  border: 2px solid #62ead8;
+  border-radius: 18px;
+  padding: 25px;
+}
 
-    .card {
-      background: rgba(14, 22, 49, 0.75);
-      padding: 24px;
-      border-radius: 16px;
-      border: 1px solid #7886d7;
-    }
+.button {
+  display: inline-block;
+  background: #62ead8;
+  color: #10213b;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 12px 5px;
+}
 
-    .card h3 {
-      margin-top: 0;
-    }
+.button:hover {
+  background: #a5fff1;
+}
 
-    .steps {
-      max-width: 750px;
-      text-align: left;
-      margin: 25px auto;
-      padding-left: 30px;
-    }
+a:focus-visible {
+  outline: 3px solid #ffe27a;
+  outline-offset: 3px;
+}
 
-    .steps li {
-      margin-bottom: 18px;
-    }
+/* DOCUMENTOS */
 
-    .challenge {
-      background: linear-gradient(135deg, #14264c, #33225d);
-      border: 2px solid #67f1dc;
-      border-radius: 20px;
-      padding: 30px 25px;
-      margin-top: 25px;
-    }
+.download-card {
+  background: #f7f9ff;
+  color: #1b294b;
+  padding: 20px;
+  border-radius: 20px;
+}
 
-    .challenge-list {
-      max-width: 650px;
-      margin: 20px auto;
-      text-align: left;
-      padding-left: 25px;
-    }
+.download-card h3 {
+  color: #213d82;
+}
 
-    .challenge-list li {
-      margin-bottom: 12px;
-    }
+.download-card p {
+  color: #34446b;
+}
 
-    /* MATERIALES DESCARGABLES */
+.document-preview {
+  width: 100%;
+  height: 390px;
+  border: 1px solid #cbd3e5;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+  margin: 20px 0;
+}
 
-    .downloads {
-      background: linear-gradient(135deg, #18345e, #443078);
-      border: 2px solid #67f1dc;
-    }
+.document-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
-    .download-card {
-      background: #ffffff;
-      color: #18233e;
-      padding: 22px;
-      border-radius: 18px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+/* VISTA PREVIA ALTERNATIVA */
 
-    .download-card h3 {
-      color: #253d83;
-    }
+.preview-fallback {
+  display: none;
+  background: white;
+  color: #233253;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
 
-    .download-card p {
-      color: #34415f;
-    }
+.preview-fallback h4 {
+  text-align: center;
+  color: #243f88;
+}
 
-    .document-preview {
-      display: block;
-      width: 100%;
-      max-width: 340px;
-      height: auto;
-      border-radius: 12px;
-      border: 1px solid #cbd4e7;
-      margin: 15px auto;
-      box-shadow: 0 5px 16px rgba(0,0,0,0.15);
-    }
+.preview-fallback table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
 
-    .download-card .button {
-      margin-top: auto;
-    }
+.preview-fallback th,
+.preview-fallback td {
+  border: 1px solid #cbd3e5;
+  padding: 8px 3px;
+  text-align: center;
+}
 
-    .kit-box {
-      background: rgba(10, 20, 45, 0.65);
-      border: 1px solid #67f1dc;
-      border-radius: 18px;
-      padding: 25px;
-      margin-top: 30px;
-    }
+.preview-fallback th {
+  background: #e4efff;
+}
 
-    .download-note {
-      font-size: 0.9rem;
-      color: #e0eaff;
-    }
+.preview-fallback .line {
+  border-bottom: 1px solid #abb9d0;
+  height: 30px;
+  margin: 12px 0;
+}
 
-    /* MENSAJE DE FERNANDO */
+.kit-box {
+  background: #152447;
+  border: 2px solid #62ead8;
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 30px;
+}
 
-    .message {
-      background: rgba(14, 22, 49, 0.75);
-      border-left: 5px solid #67f1dc;
-      border-radius: 12px;
-      padding: 25px;
-      margin: 25px auto;
-      max-width: 850px;
-    }
+.message {
+  background: #152447;
+  border-left: 5px solid #62ead8;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 25px auto;
+}
 
-    .signature {
-      color: #67f1dc;
-      font-weight: bold;
-    }
+.signature {
+  color: #62ead8;
+  font-weight: bold;
+}
 
-    /* BOTONES */
+footer {
+  background: #0a1122;
+  border-top: 2px solid #62ead8;
+  padding: 25px;
+  text-align: center;
+}
 
-    .button {
-      display: inline-block;
-      background: #67f1dc;
-      color: #10213a;
-      padding: 12px 24px;
-      margin: 12px 8px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+@media(max-width:600px) {
+  header h1 {
+    font-size: 28px;
+  }
 
-    .button:hover {
-      background: #a6fff1;
-    }
+  section {
+    padding: 25px 15px;
+  }
 
-    a:focus-visible {
-      outline: 3px solid #ffe27a;
-      outline-offset: 4px;
-    }
-
-    footer {
-      background: #0a1122;
-      text-align: center;
-      padding: 30px 15px;
-      border-top: 2px solid #67f1dc;
-    }
-
-    @media (max-width: 600px) {
-      section {
-        padding: 25px 16px;
-      }
-
-      .challenge,
-      .download-card {
-        padding: 20px 16px;
-      }
-    }
-  </style>
+  .document-preview {
+    height: 330px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -270,356 +265,311 @@
 
 <main>
 
-  <!-- SECCION 1: INTRODUCCION -->
+<!-- INTRODUCCION -->
 
-  <section>
-    <h2>¿Cómo podemos ayudar?</h2>
+<section>
+  <h2>¿Cómo podemos ayudar?</h2>
 
-    <p>
-      Todos podemos ayudar a promover hábitos
-      saludables entre las personas que disfrutan
-      de los videojuegos.
-    </p>
+  <p>
+    Todos podemos ayudar a promover hábitos
+    saludables entre las personas que disfrutan
+    de los videojuegos.
+  </p>
 
-    <p>
-      No se trata de dejar de jugar, sino de
-      aprender a organizar nuestro tiempo
-      para disfrutar de los videojuegos
-      sin descuidar nuestra salud, nuestros
-      estudios y nuestras responsabilidades.
-    </p>
+  <p>
+    No se trata de dejar de jugar, sino de aprender
+    a organizar nuestro tiempo para disfrutar
+    de los videojuegos sin descuidar nuestra salud,
+    nuestros estudios y nuestras responsabilidades.
+  </p>
 
-    <p>
-      Con pequeños cambios en nuestra rutina
-      podemos lograr un mejor balance.
-    </p>
-  </section>
+  <p>
+    Con pequeños cambios en nuestra rutina
+    podemos lograr un mejor balance.
+  </p>
+</section>
 
-  <!-- SECCION 2: CONSEJOS -->
+<!-- CONSEJOS -->
 
-  <section>
-    <h2>Pequeñas acciones que hacen la diferencia</h2>
+<section>
+  <h2>Pequeñas acciones que hacen la diferencia</h2>
 
-    <div class="cards">
+  <div class="cards">
 
-      <article class="card">
-        <h3>Organiza tu tiempo</h3>
-        <p>
-          Prepara un horario para estudiar,
-          trabajar, descansar y jugar.
-          Trata de cumplir con tus
-          responsabilidades primero.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Toma descansos</h3>
-        <p>
-          Durante las sesiones de juego,
-          toma descansos para levantarte,
-          estirarte y descansar la vista.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Cuida tu descanso</h3>
-        <p>
-          Evita jugar hasta muy tarde
-          cuando tienes clases o trabajo
-          al día siguiente.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Comparte con otros</h3>
-        <p>
-          Disfruta de tus amistades en línea,
-          pero también dedica tiempo
-          a compartir con familiares
-          y amigos en persona.
-        </p>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- SECCION 3: AYUDAR A OTROS -->
-
-  <section>
-    <h2>¿Cómo ayudar a un amigo o familiar?</h2>
-
-    <p>
-      A veces conocemos personas que pasan
-      muchas horas jugando videojuegos
-      y tienen dificultades para organizar
-      su tiempo.
-    </p>
-
-    <p>
-      Podemos ayudarlas de una manera
-      positiva y respetuosa.
-    </p>
-
-    <ol class="steps">
-      <li>
-        <strong>Habla con respeto:</strong>
-        Escucha a la persona antes de darle consejos.
-      </li>
-
-      <li>
-        <strong>Comparte ideas:</strong>
-        Recomienda organizar un horario para jugar
-        y cumplir con sus tareas.
-      </li>
-
-      <li>
-        <strong>Invita a otras actividades:</strong>
-        Pueden caminar, hacer ejercicio,
-        estudiar juntos o compartir
-        fuera de los videojuegos.
-      </li>
-
-      <li>
-        <strong>Da un buen ejemplo:</strong>
-        Practica también los hábitos
-        saludables que recomiendas.
-      </li>
-
-      <li>
-        <strong>Ofrece apoyo:</strong>
-        Recuerda que cambiar una rutina
-        puede tomar tiempo.
-      </li>
-    </ol>
-  </section>
-
-  <!-- SECCION 4: RETO DE 7 DIAS -->
-
-  <section>
-    <h2>Reto de 7 días: Encuentra tu balance</h2>
-
-    <p>
-      Este pequeño reto puede ayudarte
-      a comenzar a desarrollar hábitos
-      más saludables.
-    </p>
-
-    <div class="challenge">
-
-      <h3>¡Acepta el reto!</h3>
-
-      <ul class="challenge-list">
-        <li>
-          <strong>Día 1:</strong>
-          Anota cuánto tiempo dedicas
-          a los videojuegos.
-        </li>
-
-        <li>
-          <strong>Día 2:</strong>
-          Prepara un horario para
-          estudiar, trabajar y jugar.
-        </li>
-
-        <li>
-          <strong>Día 3:</strong>
-          Toma descansos durante
-          tus sesiones de juego.
-        </li>
-
-        <li>
-          <strong>Día 4:</strong>
-          Dedica tiempo a una
-          actividad física.
-        </li>
-
-        <li>
-          <strong>Día 5:</strong>
-          Comparte con familiares
-          o amigos fuera de línea.
-        </li>
-
-        <li>
-          <strong>Día 6:</strong>
-          Organiza tus responsabilidades
-          antes de comenzar a jugar.
-        </li>
-
-        <li>
-          <strong>Día 7:</strong>
-          Piensa en los cambios que
-          lograste y cuáles quieres
-          continuar practicando.
-        </li>
-      </ul>
-
+    <article class="card">
+      <h3>Organiza tu tiempo</h3>
       <p>
-        Recuerda que el objetivo no es
-        dejar de jugar, sino aprender
-        a disfrutar de una manera
-        más saludable.
+        Prepara un horario para estudiar,
+        trabajar, descansar y jugar.
+        Trata de cumplir con tus responsabilidades primero.
       </p>
+    </article>
 
-    </div>
-  </section>
+    <article class="card">
+      <h3>Toma descansos</h3>
+      <p>
+        Durante las sesiones de juego,
+        toma descansos para levantarte,
+        estirarte y descansar la vista.
+      </p>
+    </article>
 
-  <!-- SECCION 5: IMAGENES Y DOCUMENTOS -->
+    <article class="card">
+      <h3>Cuida tu descanso</h3>
+      <p>
+        Evita jugar hasta muy tarde
+        cuando tienes clases o trabajo
+        al día siguiente.
+      </p>
+    </article>
 
-  <section class="downloads" id="descargas">
+    <article class="card">
+      <h3>Comparte con otros</h3>
+      <p>
+        Disfruta de tus amistades en línea,
+        pero también dedica tiempo
+        a compartir con familiares y amigos
+        en persona.
+      </p>
+    </article>
 
-    <h2>Descarga tus herramientas gratuitas</h2>
+  </div>
+</section>
+
+<!-- AYUDAR A OTROS -->
+
+<section>
+  <h2>¿Cómo ayudar a un amigo o familiar?</h2>
+
+  <p>
+    A veces conocemos personas que pasan muchas
+    horas jugando videojuegos y tienen dificultades
+    para organizar su tiempo.
+  </p>
+
+  <p>
+    Podemos ayudarlas de una manera positiva
+    y respetuosa.
+  </p>
+
+  <ol class="steps">
+
+    <li>
+      <strong>Habla con respeto:</strong>
+      Escucha a la persona antes de darle consejos.
+    </li>
+
+    <li>
+      <strong>Comparte ideas:</strong>
+      Recomienda organizar un horario para jugar
+      y cumplir con sus tareas.
+    </li>
+
+    <li>
+      <strong>Invita a otras actividades:</strong>
+      Pueden caminar, hacer ejercicio,
+      estudiar juntos o compartir fuera de los videojuegos.
+    </li>
+
+    <li>
+      <strong>Da un buen ejemplo:</strong>
+      Practica también los hábitos saludables
+      que recomiendas.
+    </li>
+
+    <li>
+      <strong>Ofrece apoyo:</strong>
+      Recuerda que cambiar una rutina
+      puede tomar tiempo.
+    </li>
+
+  </ol>
+</section>
+
+<!-- RETO DE SIETE DIAS -->
+
+<section>
+  <h2>Reto de 7 días: Encuentra tu balance</h2>
+
+  <p>
+    Este pequeño reto puede ayudarte a comenzar
+    a desarrollar hábitos más saludables.
+  </p>
+
+  <div class="challenge">
+    <h3>¡Acepta el reto!</h3>
+
+    <ul class="challenge-list">
+      <li><strong>Día 1:</strong> Anota cuánto tiempo dedicas a los videojuegos.</li>
+      <li><strong>Día 2:</strong> Prepara un horario para estudiar, trabajar y jugar.</li>
+      <li><strong>Día 3:</strong> Toma descansos durante tus sesiones de juego.</li>
+      <li><strong>Día 4:</strong> Dedica tiempo a una actividad física.</li>
+      <li><strong>Día 5:</strong> Comparte con familiares o amigos fuera de línea.</li>
+      <li><strong>Día 6:</strong> Organiza tus responsabilidades antes de jugar.</li>
+      <li><strong>Día 7:</strong> Piensa en los cambios que lograste y cuáles quieres continuar.</li>
+    </ul>
 
     <p>
-      Para ayudarte a completar el reto de siete días,
-      preparé dos documentos que puedes descargar,
-      imprimir y utilizar en tu rutina.
+      Recuerda que el objetivo no es dejar de jugar,
+      sino aprender a disfrutar de una manera más saludable.
     </p>
+  </div>
+</section>
 
-    <p>
-      Puedes ver una imagen de cada documento
-      antes de descargarlo.
-    </p>
+<!-- HERRAMIENTAS GRATUITAS -->
 
-    <div class="cards">
+<section id="descargas">
 
-      <!-- CALENDARIO -->
+  <h2>Descarga tus herramientas gratuitas</h2>
 
-      <article class="download-card">
+  <p>
+    Para ayudarte a completar el reto de siete días,
+    preparé dos documentos que puedes descargar,
+    imprimir y utilizar durante la semana.
+  </p>
 
-        <h3>Calendario de hábitos saludables</h3>
+  <p>
+    Puedes ver una vista previa de cada documento
+    antes de descargarlo.
+  </p>
 
-        <img
-          class="document-preview"
-          src="images/Calendario_Habitos_Saludables_NUEVO.png"
-          alt="Vista previa del calendario de hábitos saludables"
-          loading="lazy">
+  <div class="cards">
 
-        <p>
-          Utiliza este calendario para marcar
-          tus hábitos durante siete días.
-          Puedes llevar un registro de tus
-          estudios, trabajo, descanso,
-          ejercicio y tiempo de juego.
-        </p>
+    <!-- CALENDARIO -->
 
-        <a
-          class="button"
-          href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
-          download>
-          Descargar calendario (PDF)
-        </a>
+    <article class="download-card">
 
-      </article>
+      <h3>Calendario de hábitos saludables</h3>
 
-      <!-- CHECKLIST -->
-
-      <article class="download-card">
-
-        <h3>Checklist y reflexión personal</h3>
-
-        <img
-          class="document-preview"
-          src="images/Checklist_Reflexion_Personal_NUEVO.png"
-          alt="Vista previa del checklist y reflexión personal"
-          loading="lazy">
-
-        <p>
-          Completa esta hoja para evaluar
-          tus hábitos, identificar tus logros
-          y pensar en las cosas que puedes
-          mejorar durante la próxima semana.
-        </p>
-
-        <a
-          class="button"
-          href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
-          download>
-          Descargar checklist (PDF)
-        </a>
-
-      </article>
-
-    </div>
-
-    <!-- KIT COMPLETO -->
-
-    <div class="kit-box">
-
-      <h3>¿Quieres los dos documentos juntos?</h3>
+      <div class="document-preview">
+        <iframe
+          src="downloads/Calendario_Habitos_Saludables%20%282%29.pdf#toolbar=0"
+          title="Vista previa del calendario de hábitos saludables">
+        </iframe>
+      </div>
 
       <p>
-        Descarga el kit completo de Healthy Gaming
-        Habits con el calendario y el checklist
-        en un solo archivo listo para imprimir.
+        Utiliza este calendario para marcar tus hábitos
+        durante siete días. Lleva un registro de tus
+        estudios, trabajo, descanso, ejercicio
+        y tiempo de juego.
       </p>
 
       <a
         class="button"
-        href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
+        href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
         download>
-        Descargar kit completo (PDF)
+        Descargar calendario PDF
       </a>
 
-      <p class="download-note">
-        Material educativo gratuito.
-        Puedes imprimirlo y utilizarlo
-        para organizar tu semana.
-      </p>
+    </article>
 
-    </div>
+    <!-- CHECKLIST -->
 
-  </section>
+    <article class="download-card">
 
-  <!-- SECCION 6: MENSAJE PERSONAL -->
+      <h3>Checklist y reflexión personal</h3>
 
-  <section>
-    <h2>Un mensaje de Fernando</h2>
-
-    <div class="message">
+      <div class="document-preview">
+        <iframe
+          src="downloads/Checklist_Reflexion_Personal%20%281%29.pdf#toolbar=0"
+          title="Vista previa del checklist y reflexión personal">
+        </iframe>
+      </div>
 
       <p>
-        Yo sé que no siempre es fácil
-        organizar nuestro tiempo,
-        especialmente cuando tenemos
-        clases, trabajo y otras
-        responsabilidades.
+        Completa esta hoja para evaluar tus hábitos,
+        identificar tus logros y pensar en las cosas
+        que puedes mejorar durante la próxima semana.
       </p>
 
-      <p>
-        Como estudiante de Computer Science
-        que disfruta mucho de los videojuegos,
-        entiendo lo difícil que puede ser
-        encontrar ese balance.
-      </p>
+      <a
+        class="button"
+        href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
+        download>
+        Descargar checklist PDF
+      </a>
 
-      <p>
-        Por eso quiero motivar a otros
-        jóvenes a comenzar con pequeños
-        cambios. No tenemos que dejar
-        de jugar videojuegos para cumplir
-        con nuestras metas.
-      </p>
+    </article>
 
-      <p>
-        Podemos disfrutar de nuestros
-        pasatiempos y también dedicar
-        tiempo a nuestro futuro.
-      </p>
+  </div>
 
-      <p class="signature">
-        Fernando José Juliá Hernández
-      </p>
+  <!-- KIT COMPLETO -->
 
-    </div>
+  <div class="kit-box">
 
-    <a class="button" href="about.html">
-      Conoce mi historia
+    <h3>Descarga el kit completo</h3>
+
+    <p>
+      También puedes descargar el calendario
+      y el checklist juntos en un solo documento,
+      listo para imprimir.
+    </p>
+
+    <a
+      class="button"
+      href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
+      download>
+      Descargar kit completo PDF
     </a>
 
-    <a class="button" href="resources.html">
-      Explora los recursos
-    </a>
-  </section>
+    <p>
+      Estos materiales son gratuitos
+      y están diseñados para ayudarte
+      a desarrollar hábitos saludables.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- MENSAJE PERSONAL -->
+
+<section>
+  <h2>Un mensaje de Fernando</h2>
+
+  <div class="message">
+
+    <p>
+      Yo sé que no siempre es fácil organizar
+      nuestro tiempo, especialmente cuando tenemos
+      clases, trabajo y otras responsabilidades.
+    </p>
+
+    <p>
+      Como estudiante de Computer Science
+      que disfruta mucho de los videojuegos,
+      entiendo lo difícil que puede ser
+      encontrar ese balance.
+    </p>
+
+    <p>
+      Por eso quiero motivar a otros jóvenes
+      a comenzar con pequeños cambios.
+      No tenemos que dejar de jugar videojuegos
+      para cumplir con nuestras metas.
+    </p>
+
+    <p>
+      Podemos disfrutar de nuestros pasatiempos
+      y también dedicar tiempo a nuestro futuro.
+    </p>
+
+    <p class="signature">
+      Fernando José Juliá Hernández
+    </p>
+
+  </div>
+
+  <a class="button" href="about.html">
+    Conoce mi historia
+  </a>
+
+  <a class="button" href="resources.html">
+    Explora los recursos
+  </a>
+
+</section>
 
 </main>
 
