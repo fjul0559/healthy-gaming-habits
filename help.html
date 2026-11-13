@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Descubre cómo ayudar a promover hábitos saludables entre los jóvenes que disfrutan de los videojuegos.">
+
+  <title>Cómo ayudar | Healthy Gaming Habits</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #10182d;
+      color: #f5f7ff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111b34, #283665);
+      padding: 45px 20px 30px;
+      text-align: center;
+      border-bottom: 3px solid #67f1dc;
+    }
+
+    header h1 {
+      color: #67f1dc;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      border: 2px solid #67f1dc;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: #67f1dc;
+      color: #10182d;
+    }
+
+    main {
+      width: min(1050px, 94%);
+      margin: 40px auto;
+    }
+
+    section {
+      background: linear-gradient(135deg, #244b96, #46317d);
+      border: 1px solid #7c91e6;
+      border-radius: 22px;
+      padding: 35px 25px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2, h3 {
+      color: #67f1dc;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    section p {
+      max-width: 850px;
+      margin: 16px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: rgba(14, 22, 49, 0.75);
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid #7886d7;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .steps {
+      max-width: 750px;
+      text-align: left;
+      margin: 25px auto;
+      padding-left: 30px;
+    }
+
+    .steps li {
+      margin-bottom: 18px;
+    }
+
+    .challenge {
+      background: linear-gradient(135deg, #14264c, #33225d);
+      border: 2px solid #67f1dc;
+      border-radius: 20px;
+      padding: 30px 25px;
+      margin-top: 25px;
+    }
+
+    .challenge-list {
+      max-width: 650px;
+      margin: 20px auto;
+      text-align: left;
+      padding-left: 25px;
+    }
+
+    .challenge-list li {
+      margin-bottom: 12px;
+    }
+
+    .message {
+      background: rgba(14, 22, 49, 0.75);
+      border-left: 5px solid #67f1dc;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 25px auto;
+      max-width: 850px;
+    }
+
+    .signature {
+      color: #67f1dc;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      background: #67f1dc;
+      color: #10213a;
+      padding: 12px 24px;
+      margin: 12px 8px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #a6fff1;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #ffe27a;
+      outline-offset: 4px;
+    }
+
+    footer {
+      background: #0a1122;
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 2px solid #67f1dc;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 25px 16px;
+      }
+
+      .challenge {
+        padding: 22px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Healthy Gaming Habits</h1>
+  <p>Juega, Disfruta y Mantén un Balance</p>
+
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Sobre la causa</a>
+    <a href="help.html" aria-current="page">Cómo ayudar</a>
+    <a href="resources.html">Recursos</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- SECCION 1: INTRODUCCION -->
+
+  <section>
+    <h2>¿Cómo podemos ayudar?</h2>
+
+    <p>
+      Todos podemos ayudar a promover hábitos
+      saludables entre las personas que disfrutan
+      de los videojuegos.
+    </p>
+
+    <p>
+      No se trata de dejar de jugar, sino de
+      aprender a organizar nuestro tiempo
+      para disfrutar de los videojuegos
+      sin descuidar nuestra salud, nuestros
+      estudios y nuestras responsabilidades.
+    </p>
+
+    <p>
+      Con pequeños cambios en nuestra rutina
+      podemos lograr un mejor balance.
+    </p>
+  </section>
+
+  <!-- SECCION 2: CONSEJOS -->
+
+  <section>
+    <h2>Pequeñas acciones que hacen la diferencia</h2>
+
+    <div class="cards">
+
+      <article class="card">
+        <h3>Organiza tu tiempo</h3>
+        <p>
+          Prepara un horario para estudiar,
+          trabajar, descansar y jugar.
+          Trata de cumplir con tus
+          responsabilidades primero.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Toma descansos</h3>
+        <p>
+          Durante las sesiones de juego,
+          toma descansos para levantarte,
+          estirarte y descansar la vista.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Cuida tu descanso</h3>
+        <p>
+          Evita jugar hasta muy tarde
+          cuando tienes clases o trabajo
+          al día siguiente.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Comparte con otros</h3>
+        <p>
+          Disfruta de tus amistades en línea,
+          pero también dedica tiempo
+          a compartir con familiares
+          y amigos en persona.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECCION 3: COMO AYUDAR A OTROS -->
+
+  <section>
+    <h2>¿Cómo ayudar a un amigo o familiar?</h2>
+
+    <p>
+      A veces conocemos personas que pasan
+      muchas horas jugando videojuegos
+      y tienen dificultades para organizar
+      su tiempo.
+    </p>
+
+    <p>
+      Podemos ayudarlas de una manera
+      positiva y respetuosa.
+    </p>
+
+    <ol class="steps">
+      <li>
+        <strong>Habla con respeto:</strong>
+        Escucha a la persona antes de
+        darle consejos.
+      </li>
+
+      <li>
+        <strong>Comparte ideas:</strong>
+        Recomienda organizar un horario
+        para jugar y cumplir con sus tareas.
+      </li>
+
+      <li>
+        <strong>Invita a otras actividades:</strong>
+        Pueden caminar, hacer ejercicio,
+        estudiar juntos o compartir
+        fuera de los videojuegos.
+      </li>
+
+      <li>
+        <strong>Da un buen ejemplo:</strong>
+        Practica también los hábitos
+        saludables que recomiendas.
+      </li>
+
+      <li>
+        <strong>Ofrece apoyo:</strong>
+        Recuerda que cambiar una rutina
+        puede tomar tiempo.
+      </li>
+    </ol>
+  </section>
+
+  <!-- SECCION 4: RETO -->
+
+  <section>
+    <h2>Reto de 7 días: Encuentra tu balance</h2>
+
+    <p>
+      Este pequeño reto puede ayudarte
+      a comenzar a desarrollar hábitos
+      más saludables.
+    </p>
+
+    <div class="challenge">
+
+      <h3>¡Acepta el reto!</h3>
+
+      <ul class="challenge-list">
+        <li>
+          <strong>Día 1:</strong>
+          Anota cuánto tiempo dedicas
+          a los videojuegos.
+        </li>
+
+        <li>
+          <strong>Día 2:</strong>
+          Prepara un horario para
+          estudiar, trabajar y jugar.
+        </li>
+
+        <li>
+          <strong>Día 3:</strong>
+          Toma descansos durante
+          tus sesiones de juego.
+        </li>
+
+        <li>
+          <strong>Día 4:</strong>
+          Dedica tiempo a una
+          actividad física.
+        </li>
+
+        <li>
+          <strong>Día 5:</strong>
+          Comparte con familiares
+          o amigos fuera de línea.
+        </li>
+
+        <li>
+          <strong>Día 6:</strong>
+          Organiza tus responsabilidades
+          antes de comenzar a jugar.
+        </li>
+
+        <li>
+          <strong>Día 7:</strong>
+          Piensa en los cambios que
+          lograste y cuáles quieres
+          continuar practicando.
+        </li>
+      </ul>
+
+      <p>
+        Recuerda que el objetivo no es
+        dejar de jugar, sino aprender
+        a disfrutar de una manera
+        más saludable.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SECCION 5: MENSAJE DE FERNANDO -->
+
+  <section>
+    <h2>Un mensaje de Fernando</h2>
+
+    <div class="message">
+
+      <p>
+        Yo sé que no siempre es fácil
+        organizar nuestro tiempo,
+        especialmente cuando tenemos
+        clases, trabajo y otras
+        responsabilidades.
+      </p>
+
+      <p>
+        Como estudiante de Computer Science
+        que disfruta mucho de los videojuegos,
+        entiendo lo difícil que puede ser
+        encontrar ese balance.
+      </p>
+
+      <p>
+        Por eso quiero motivar a otros
+        jóvenes a comenzar con pequeños
+        cambios. No tenemos que dejar
+        de jugar videojuegos para cumplir
+        con nuestras metas.
+      </p>
+
+      <p>
+        Podemos disfrutar de nuestros
+        pasatiempos y también dedicar
+        tiempo a nuestro futuro.
+      </p>
+
+      <p class="signature">
+        Fernando José Juliá Hernández
+      </p>
+
+    </div>
+
+    <a class="button" href="about.html">
+      Conoce mi historia
+    </a>
+
+    <a class="button" href="resources.html">
+      Explora los recursos
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <p>Healthy Gaming Habits</p>
+  <p>Proyecto educativo sobre hábitos saludables.</p>
+  <p>Creado por Fernando José Juliá Hernández.</p>
+  <p>&copy; 2026 Healthy Gaming Habits</p>
+</footer>
+
+</body>
+</html>
