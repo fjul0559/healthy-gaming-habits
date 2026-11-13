@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Descubre cómo ayudar a promover hábitos saludables entre los jóvenes que disfrutan de los videojuegos.">
+  <meta name="description"
+    content="Consejos, calendario y checklist gratuitos para mantener hábitos saludables al jugar videojuegos.">
 
   <title>Cómo ayudar | Healthy Gaming Habits</title>
 
@@ -94,14 +95,14 @@
     .cards {
       display: grid;
       grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
+        repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
       margin-top: 25px;
     }
 
     .card {
       background: rgba(14, 22, 49, 0.75);
-      padding: 22px;
+      padding: 24px;
       border-radius: 16px;
       border: 1px solid #7886d7;
     }
@@ -140,6 +141,62 @@
       margin-bottom: 12px;
     }
 
+    /* DOCUMENTOS DESCARGABLES */
+
+    .downloads {
+      background: linear-gradient(135deg, #18345e, #443078);
+      border: 2px solid #67f1dc;
+    }
+
+    .download-card {
+      background: #f8faff;
+      color: #18233e;
+      padding: 22px;
+      border-radius: 18px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .download-card h3 {
+      color: #253d83;
+    }
+
+    .download-card p {
+      color: #34415f;
+    }
+
+    .document-preview {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #cbd4e7;
+      margin: 15px auto;
+      box-shadow: 0 5px 16px rgba(0,0,0,0.15);
+    }
+
+    .download-card .button {
+      margin-top: auto;
+    }
+
+    .download-note {
+      font-size: 0.9rem;
+      color: #e0eaff;
+    }
+
+    .kit-box {
+      background: rgba(10, 20, 45, 0.65);
+      border: 1px solid #67f1dc;
+      border-radius: 18px;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    /* MENSAJE PERSONAL */
+
     .message {
       background: rgba(14, 22, 49, 0.75);
       border-left: 5px solid #67f1dc;
@@ -153,6 +210,8 @@
       color: #67f1dc;
       font-weight: bold;
     }
+
+    /* BOTONES */
 
     .button {
       display: inline-block;
@@ -188,6 +247,10 @@
 
       .challenge {
         padding: 22px 16px;
+      }
+
+      .download-card {
+        padding: 18px;
       }
     }
   </style>
@@ -282,7 +345,7 @@
     </div>
   </section>
 
-  <!-- SECCION 3: COMO AYUDAR A OTROS -->
+  <!-- SECCION 3: AYUDAR A OTROS -->
 
   <section>
     <h2>¿Cómo ayudar a un amigo o familiar?</h2>
@@ -302,14 +365,13 @@
     <ol class="steps">
       <li>
         <strong>Habla con respeto:</strong>
-        Escucha a la persona antes de
-        darle consejos.
+        Escucha a la persona antes de darle consejos.
       </li>
 
       <li>
         <strong>Comparte ideas:</strong>
-        Recomienda organizar un horario
-        para jugar y cumplir con sus tareas.
+        Recomienda organizar un horario para jugar
+        y cumplir con sus tareas.
       </li>
 
       <li>
@@ -333,7 +395,7 @@
     </ol>
   </section>
 
-  <!-- SECCION 4: RETO -->
+  <!-- SECCION 4: RETO DE 7 DIAS -->
 
   <section>
     <h2>Reto de 7 días: Encuentra tu balance</h2>
@@ -403,7 +465,114 @@
     </div>
   </section>
 
-  <!-- SECCION 5: MENSAJE DE FERNANDO -->
+  <!-- SECCION 5: MATERIALES GRATUITOS -->
+
+  <section class="downloads">
+
+    <h2>Descarga tus herramientas gratuitas</h2>
+
+    <p>
+      Para ayudarte a completar el reto de siete días,
+      preparé dos documentos que puedes descargar,
+      imprimir y utilizar en tu rutina.
+    </p>
+
+    <p>
+      Primero puedes ver cómo son los documentos
+      y después descargar el que prefieras.
+    </p>
+
+    <div class="cards">
+
+      <!-- CALENDARIO -->
+
+      <article class="download-card">
+
+        <h3>Calendario de hábitos saludables</h3>
+
+        <img
+          class="document-preview"
+          src="images/Calendario_Habitos_Saludables_NUEVO.png"
+          alt="Vista previa del calendario de hábitos saludables"
+          loading="lazy">
+
+        <p>
+          Utiliza este calendario para marcar
+          tus hábitos durante siete días.
+          Puedes llevar un registro de tus
+          estudios, trabajo, descanso,
+          ejercicio y tiempo de juego.
+        </p>
+
+        <a
+          class="button"
+          href="downloads/Calendario_Habitos_Saludables%20%282%29.pdf"
+          download>
+          Descargar calendario PDF
+        </a>
+
+      </article>
+
+      <!-- CHECKLIST -->
+
+      <article class="download-card">
+
+        <h3>Checklist y reflexión personal</h3>
+
+        <img
+          class="document-preview"
+          src="images/Checklist_Reflexion_Personal_NUEVO.png"
+          alt="Vista previa del checklist y reflexión personal"
+          loading="lazy">
+
+        <p>
+          Completa esta hoja para evaluar
+          tus hábitos, identificar tus logros
+          y pensar en las cosas que puedes
+          mejorar durante la próxima semana.
+        </p>
+
+        <a
+          class="button"
+          href="downloads/Checklist_Reflexion_Personal%20%281%29.pdf"
+          download>
+          Descargar checklist PDF
+        </a>
+
+      </article>
+
+    </div>
+
+    <!-- KIT COMPLETO -->
+
+    <div class="kit-box">
+
+      <h3>¿Quieres los dos documentos juntos?</h3>
+
+      <p>
+        Descarga el kit completo de Healthy Gaming
+        Habits con el calendario y el checklist
+        en un solo archivo listo para imprimir.
+      </p>
+
+      <a
+        class="button"
+        href="downloads/Healthy_Gaming_Habits_Kit_Imprimible.pdf"
+        download>
+        Descargar kit completo PDF
+      </a>
+
+      <p class="download-note">
+        Material educativo gratuito.
+        Puedes imprimirlo y utilizarlo
+        para organizar tu semana.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SECCION 6: MENSAJE DE FERNANDO -->
 
   <section>
     <h2>Un mensaje de Fernando</h2>
