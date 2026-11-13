@@ -1,13 +1,19 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conoce la misión de Healthy Gaming Habits, la historia de Fernando y estadísticas sobre videojuegos y hábitos saludables.">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Conoce la misión de Healthy Gaming Habits, la historia de Fernando y estadísticas sobre videojuegos y hábitos saludables.">
+
   <title>Nuestra Misión | Healthy Gaming Habits</title>
 
   <style>
+
     :root {
       --fondo: #10182d;
       --tarjeta: #17264b;
@@ -16,9 +22,13 @@
       --borde: #8294e5;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -27,6 +37,8 @@
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
     }
+
+    /* ENCABEZADO */
 
     header {
       background: linear-gradient(135deg, #142447, #34316c);
@@ -41,7 +53,11 @@
       margin: 0;
     }
 
-    header p { font-size: 18px; }
+    header p {
+      font-size: 18px;
+    }
+
+    /* NAVEGACION */
 
     nav {
       display: flex;
@@ -67,6 +83,8 @@
       color: #142447;
     }
 
+    /* CONTENIDO */
+
     main {
       width: min(1050px, 94%);
       margin: 35px auto;
@@ -87,14 +105,16 @@
       margin-top: 0;
     }
 
-    h3 { color: var(--turquesa); }
+    h3 {
+      color: var(--turquesa);
+    }
 
     p {
       max-width: 850px;
       margin: 15px auto;
     }
 
-    /* IMAGENES ORIGINALES */
+    /* IMAGENES */
 
     .project-image {
       display: block;
@@ -120,7 +140,10 @@
       font-size: 13px;
       font-style: italic;
       color: #e2e9ff;
+      margin-top: 8px;
     }
+
+    /* HISTORIA PERSONAL */
 
     .story {
       background: #152447;
@@ -137,9 +160,12 @@
       font-weight: bold;
     }
 
+    /* TARJETAS */
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       margin-top: 25px;
     }
@@ -171,9 +197,13 @@
       line-height: 1.2;
     }
 
-    .stat-card h3 { margin: 12px 0; }
+    .stat-card h3 {
+      margin: 12px 0;
+    }
 
-    .stat-card p { flex-grow: 1; }
+    .stat-card p {
+      flex-grow: 1;
+    }
 
     .stat-source {
       font-size: 12px;
@@ -185,11 +215,17 @@
       text-decoration: underline;
     }
 
+    .stat-source a:hover {
+      color: white;
+    }
+
     .research-note {
       font-size: 13px;
       color: #e2e9ff;
       margin-top: 25px;
     }
+
+    /* BOTONES */
 
     .button {
       display: inline-block;
@@ -202,12 +238,16 @@
       margin: 10px 5px;
     }
 
-    .button:hover { background: #a5fff1; }
+    .button:hover {
+      background: #a5fff1;
+    }
 
     a:focus-visible {
       outline: 3px solid #ffe27a;
       outline-offset: 4px;
     }
+
+    /* PIE DE PAGINA */
 
     footer {
       background: #0a1122;
@@ -216,57 +256,87 @@
       text-align: center;
     }
 
+    /* DISEÑO RESPONSIVE */
+
     @media (max-width: 600px) {
-      section { padding: 25px 15px; }
-      .story { padding: 20px 15px; }
-      nav a { padding: 9px 12px; }
-      .portrait-image { max-width: 100%; }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      .story {
+        padding: 20px 15px;
+      }
+
+      nav a {
+        padding: 9px 12px;
+      }
+
+      .portrait-image {
+        max-width: 100%;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
 <header>
+
   <h1>Healthy Gaming Habits</h1>
+
   <p>Juega, Disfruta y Mantén un Balance</p>
 
   <nav aria-label="Navegación principal">
+
     <a href="index.html">Inicio</a>
-    <a href="about.html" aria-current="page">Nuestra Misión</a>
+
+    <a href="about.html" aria-current="page">
+      Nuestra Misión
+    </a>
+
     <a href="help.html">Cómo ayudar</a>
+
     <a href="resources.html">Recursos</a>
+
   </nav>
+
 </header>
 
 <main>
 
-  <!-- NUESTRA MISION -->
+  <!-- SECCION 1: NUESTRA MISION -->
 
   <section id="mision">
+
     <h2>Nuestra Misión</h2>
 
     <p>
-      Healthy Gaming Habits es un proyecto educativo
-      que busca crear conciencia sobre la importancia
-      de mantener hábitos saludables mientras
+      Healthy Gaming Habits es un proyecto
+      educativo que busca crear conciencia
+      sobre la importancia de mantener
+      hábitos saludables mientras
       disfrutamos de los videojuegos.
     </p>
 
     <p>
-      Los videojuegos pueden ser una forma divertida
-      de relajarnos, aprender y compartir con otras
-      personas. Sin embargo, también es importante
-      organizar nuestro tiempo para no descuidar
-      los estudios, el trabajo, el descanso y la salud.
+      Los videojuegos pueden ser una forma
+      divertida de relajarnos, aprender
+      y compartir con otras personas.
+      Sin embargo, también es importante
+      organizar nuestro tiempo para no
+      descuidar los estudios, el trabajo,
+      el descanso y nuestra salud.
     </p>
 
-    <!-- PRIMERA IMAGEN -->
+    <!-- IMAGEN 1: INFOGRAFIA -->
 
     <img
       class="project-image"
-      src="images/gaming-infografia.png"
-      alt="Infografía Healthy Gaming Habits: juega con moderación, descansa bien, cumple tus responsabilidades y mantente activo."
+      src="images/Healthy%20Gaming%20Habits%20Infohraphics.png"
+      alt="Infografía Healthy Gaming Habits que recomienda jugar con moderación, descansar bien, cumplir responsabilidades y mantenerse activo."
       loading="lazy">
 
     <p class="image-note">
@@ -279,19 +349,21 @@
       y herramientas gratuitas que puedan ayudar
       a otros jóvenes a encontrar un mejor balance.
     </p>
+
   </section>
 
-  <!-- HISTORIA DE FERNANDO -->
+  <!-- SECCION 2: HISTORIA DE FERNANDO -->
 
   <section id="historia">
+
     <h2>¿Por qué elegí este tema?</h2>
 
-    <!-- SEGUNDA IMAGEN -->
+    <!-- IMAGEN 2: ILUSTRACION DE FERNANDO -->
 
     <img
       class="portrait-image"
-      src="images/fernando-gaming.png"
-      alt="Ilustración de un joven con gafas jugando videojuegos en un espacio que combina estudio y entretenimiento."
+      src="images/Neon%20Gaming%20Setup%20Portrait.png"
+      alt="Ilustración creada con inteligencia artificial de un joven con gafas y un control de videojuegos, rodeado de materiales de estudio."
       loading="lazy">
 
     <p class="image-note">
@@ -299,94 +371,107 @@
     </p>
 
     <div class="story">
+
       <p>
         Mi nombre es Fernando José Juliá Hernández
         y soy estudiante de Ciencias de Computadoras
-        en la Universidad Interamericana de Puerto Rico.
+        en la Universidad Interamericana
+        de Puerto Rico.
       </p>
 
       <p>
-        Desde hace tiempo me gustan mucho los
-        videojuegos y la tecnología. Son actividades
-        que disfruto y que forman parte de mis intereses.
+        Desde hace tiempo me gustan mucho
+        los videojuegos y la tecnología.
+        Son actividades que disfruto
+        y que forman parte de mis intereses.
       </p>
 
       <p>
-        Pero también sé que a veces puede ser difícil
-        organizar el tiempo entre jugar, estudiar,
-        trabajar, descansar y compartir con otras personas.
+        Pero también sé que a veces puede ser
+        difícil organizar el tiempo entre jugar,
+        estudiar, trabajar, descansar
+        y compartir con otras personas.
       </p>
 
       <p>
-        Como estudiante, estoy aprendiendo a organizar
-        mejor mi rutina para cumplir con mis
-        responsabilidades sin dejar de disfrutar
-        de los videojuegos.
+        Como estudiante, estoy aprendiendo
+        a organizar mejor mi rutina
+        para cumplir con mis responsabilidades
+        sin dejar de disfrutar de los videojuegos.
       </p>
 
       <p>
         Por eso elegí este tema para mi proyecto.
         Quiero compartir lo que estoy aprendiendo
-        y motivar a otros jóvenes a desarrollar
-        hábitos más saludables.
+        y motivar a otros jóvenes
+        a desarrollar hábitos más saludables.
       </p>
 
       <p class="signature">
         Fernando José Juliá Hernández
       </p>
+
     </div>
+
   </section>
 
-  <!-- IMPORTANCIA DEL BALANCE -->
+  <!-- SECCION 3: IMPORTANCIA DEL BALANCE -->
 
   <section id="balance">
+
     <h2>¿Por qué es importante mantener un balance?</h2>
 
     <p>
-      Jugar videojuegos no tiene que ser algo negativo.
-      Lo importante es reconocer cuándo necesitamos
-      dedicar tiempo a otras actividades.
+      Jugar videojuegos no tiene que ser
+      algo negativo. Lo importante es reconocer
+      cuándo necesitamos dedicar tiempo
+      a otras actividades.
     </p>
 
     <div class="cards">
+
       <article class="card">
         <h3>Estudios y responsabilidades</h3>
         <p>
-          Organizar nuestro tiempo nos ayuda a completar
-          las tareas y cumplir con nuestras metas académicas.
+          Organizar nuestro tiempo nos ayuda
+          a completar las tareas y cumplir
+          con nuestras metas académicas.
         </p>
       </article>
 
       <article class="card">
         <h3>Descanso y salud</h3>
         <p>
-          Dormir lo suficiente, tomar descansos y
-          mantenernos activos son hábitos importantes
-          para nuestro bienestar.
+          Dormir lo suficiente, tomar descansos
+          y mantenernos activos son hábitos
+          importantes para nuestro bienestar.
         </p>
       </article>
 
       <article class="card">
         <h3>Familia y amistades</h3>
         <p>
-          Podemos disfrutar de nuestras amistades en
-          los videojuegos y también compartir tiempo
-          con las personas que nos rodean.
+          Podemos disfrutar de nuestras amistades
+          en los videojuegos y también compartir
+          tiempo con las personas que nos rodean.
         </p>
       </article>
+
     </div>
+
   </section>
 
-  <!-- ESTADISTICAS CON FUENTES -->
+  <!-- SECCION 4: ESTADISTICAS -->
 
   <section id="estadisticas">
+
     <h2>¿Qué dicen las investigaciones?</h2>
 
     <p>
-      Los videojuegos forman parte de la vida de muchos
-      adolescentes. Las investigaciones muestran que
-      pueden tener aspectos positivos, pero también
-      presentan algunos desafíos.
+      Los videojuegos forman parte de la vida
+      de muchos adolescentes. Las investigaciones
+      muestran que pueden tener aspectos positivos,
+      pero también presentan algunos desafíos.
     </p>
 
     <p>
@@ -397,13 +482,18 @@
 
     <div class="cards">
 
+      <!-- ESTADISTICA 1 -->
+
       <article class="stat-card">
+
         <span class="stat-number">85%</span>
+
         <h3>Juegan videojuegos</h3>
 
         <p>
-          De los adolescentes encuestados en Estados
-          Unidos dijeron que juegan videojuegos.
+          De los adolescentes encuestados
+          en Estados Unidos dijeron
+          que juegan videojuegos.
         </p>
 
         <div class="stat-source">
@@ -415,15 +505,21 @@
             Pew Research Center (2024)
           </a>
         </div>
+
       </article>
 
+      <!-- ESTADISTICA 2 -->
+
       <article class="stat-card">
+
         <span class="stat-number">56%</span>
+
         <h3>Resolver problemas</h3>
 
         <p>
-          De los adolescentes que juegan videojuegos
-          dijeron que estos les han ayudado a desarrollar
+          De los adolescentes que juegan
+          videojuegos dijeron que estos
+          les han ayudado a desarrollar
           habilidades para resolver problemas.
         </p>
 
@@ -436,15 +532,21 @@
             Pew Research Center (2024)
           </a>
         </div>
+
       </article>
 
+      <!-- ESTADISTICA 3 -->
+
       <article class="stat-card">
+
         <span class="stat-number">41%</span>
+
         <h3>Impacto en el sueño</h3>
 
         <p>
-          De los adolescentes que juegan videojuegos
-          dijeron que jugar ha afectado negativamente
+          De los adolescentes que juegan
+          videojuegos dijeron que jugar
+          ha afectado negativamente
           la cantidad de sueño que reciben.
         </p>
 
@@ -457,107 +559,128 @@
             Pew Research Center (2024)
           </a>
         </div>
+
       </article>
 
     </div>
 
     <p class="research-note">
-      Nota: Estas estadísticas corresponden a
-      adolescentes de 13 a 17 años encuestados
-      en Estados Unidos en 2023. El informe se
-      publicó en mayo de 2024. Las respuestas
-      sobre beneficios y sueño reflejan
-      las experiencias reportadas por los participantes.
+      Nota: Estas estadísticas corresponden
+      a adolescentes de 13 a 17 años
+      encuestados en Estados Unidos en 2023.
+      El informe fue publicado en mayo de 2024.
+      Las respuestas sobre beneficios y sueño
+      reflejan las experiencias reportadas
+      por los participantes.
     </p>
+
   </section>
 
-  <!-- HABITOS SALUDABLES -->
+  <!-- SECCION 5: HABITOS SALUDABLES -->
 
   <section id="habitos">
+
     <h2>Pequeños cambios pueden ayudar</h2>
 
     <p>
-      No necesitamos dejar de jugar para desarrollar
-      buenos hábitos. Podemos comenzar con pequeños
-      cambios en nuestra rutina diaria.
+      No necesitamos dejar de jugar para
+      desarrollar buenos hábitos.
+      Podemos comenzar con pequeños cambios
+      en nuestra rutina diaria.
     </p>
 
     <div class="cards">
+
       <article class="card">
         <h3>Tomar descansos</h3>
         <p>
-          Levantarnos, estirarnos y descansar los ojos
-          durante nuestras sesiones de juego.
+          Levantarnos, estirarnos y descansar
+          los ojos durante nuestras sesiones
+          de juego.
         </p>
       </article>
 
       <article class="card">
         <h3>Organizar el tiempo</h3>
         <p>
-          Crear un horario para estudiar, trabajar,
-          descansar y disfrutar de nuestros pasatiempos.
+          Crear un horario para estudiar,
+          trabajar, descansar y disfrutar
+          de nuestros pasatiempos.
         </p>
       </article>
 
       <article class="card">
         <h3>Mantenernos activos</h3>
         <p>
-          Buscar tiempo para caminar, hacer ejercicio
-          y realizar actividades fuera de la pantalla.
+          Buscar tiempo para caminar,
+          hacer ejercicio y realizar
+          actividades fuera de la pantalla.
         </p>
       </article>
+
     </div>
+
   </section>
 
-  <!-- OBJETIVOS -->
+  <!-- SECCION 6: OBJETIVOS -->
 
   <section id="objetivos">
+
     <h2>¿Qué queremos lograr?</h2>
 
     <div class="cards">
+
       <article class="card">
         <h3>Crear conciencia</h3>
         <p>
-          Ayudar a otros jóvenes a comprender la
-          importancia de mantener un balance entre
-          los videojuegos y sus responsabilidades.
+          Ayudar a otros jóvenes a comprender
+          la importancia de mantener un balance
+          entre los videojuegos
+          y sus responsabilidades.
         </p>
       </article>
 
       <article class="card">
         <h3>Compartir consejos</h3>
         <p>
-          Ofrecer ideas sencillas para organizar el
-          tiempo, descansar y mantener hábitos saludables.
+          Ofrecer ideas sencillas para organizar
+          el tiempo, descansar y mantener
+          hábitos saludables.
         </p>
       </article>
 
       <article class="card">
         <h3>Motivar a participar</h3>
         <p>
-          Invitar a los visitantes a completar un reto
-          de siete días para reflexionar sobre sus hábitos.
+          Invitar a los visitantes
+          a completar un reto de siete días
+          para reflexionar sobre sus hábitos.
         </p>
       </article>
+
     </div>
+
   </section>
 
-  <!-- INVITACION FINAL -->
+  <!-- SECCION 7: INVITACION -->
 
   <section id="participa">
+
     <h2>¡Tú también puedes encontrar tu balance!</h2>
 
     <p>
       No se trata de dejar de jugar videojuegos.
-      Se trata de aprender a disfrutar de nuestros
-      pasatiempos mientras cuidamos nuestra salud
-      y trabajamos por nuestras metas.
+      Se trata de aprender a disfrutar
+      de nuestros pasatiempos mientras
+      cuidamos nuestra salud y trabajamos
+      por nuestras metas.
     </p>
 
     <p>
-      Visita nuestra sección Cómo ayudar para conocer
-      consejos y actividades, o explora los recursos
-      educativos que hemos preparado.
+      Visita nuestra sección Cómo ayudar
+      para conocer consejos y actividades,
+      o explora los recursos educativos
+      que hemos preparado.
     </p>
 
     <a class="button" href="help.html">
@@ -571,17 +694,22 @@
     <a class="button" href="resources.html#reto">
       Participar en el reto
     </a>
+
   </section>
 
 </main>
 
 <footer>
+
   <p>Healthy Gaming Habits</p>
+
   <p>
     Proyecto educativo creado por
     Fernando José Juliá Hernández.
   </p>
+
   <p>&copy; 2026 Healthy Gaming Habits</p>
+
 </footer>
 
 </body>
