@@ -23,7 +23,6 @@
     }
 
     /* ENCABEZADO */
-
     header {
       background: linear-gradient(135deg, #142447, #34316c);
       text-align: center;
@@ -41,7 +40,6 @@
     }
 
     /* MENU */
-
     nav {
       margin-top: 25px;
     }
@@ -64,7 +62,6 @@
     }
 
     /* CONTENIDO */
-
     main {
       max-width: 1050px;
       margin: 35px auto;
@@ -124,7 +121,6 @@
     }
 
     /* BOTONES */
-
     .button {
       display: inline-block;
       background: #62ead8;
@@ -154,7 +150,6 @@
     }
 
     /* DOCUMENTOS */
-
     .download-card {
       background: #f7f9ff;
       color: #1b294b;
@@ -171,7 +166,6 @@
     }
 
     /* VISTAS PREVIAS */
-
     .paper {
       background: #ffffff;
       color: #263454;
@@ -249,7 +243,6 @@
     }
 
     /* MENSAJE */
-
     .message {
       background: #152447;
       border-left: 5px solid #62ead8;
@@ -265,7 +258,6 @@
     }
 
     /* FORMULARIO DE CONTACTO */
-
     .contact-box {
       background: #152447;
       border: 2px solid #62ead8;
@@ -344,7 +336,6 @@
     }
 
     /* PIE DE PAGINA */
-
     footer {
       background: #0a1122;
       border-top: 2px solid #62ead8;
@@ -393,7 +384,6 @@
 <main>
 
   <!-- INTRODUCCION -->
-
   <section>
     <h2>¿Cómo podemos ayudar?</h2>
 
@@ -416,7 +406,6 @@
   </section>
 
   <!-- CONSEJOS -->
-
   <section>
     <h2>Pequeñas acciones que hacen la diferencia</h2>
 
@@ -462,7 +451,6 @@
   </section>
 
   <!-- AYUDAR A OTROS -->
-
   <section>
     <h2>¿Cómo ayudar a un amigo o familiar?</h2>
 
@@ -508,7 +496,6 @@
   </section>
 
   <!-- RETO DE SIETE DIAS -->
-
   <section>
     <h2>Reto de 7 días: Encuentra tu balance</h2>
 
@@ -538,7 +525,6 @@
   </section>
 
   <!-- HERRAMIENTAS GRATUITAS -->
-
   <section id="descargas">
     <h2>Descarga tus herramientas gratuitas</h2>
 
@@ -556,7 +542,6 @@
     <div class="cards">
 
       <!-- CALENDARIO -->
-
       <article class="download-card">
         <h3>Calendario de hábitos saludables</h3>
 
@@ -633,7 +618,6 @@
       </article>
 
       <!-- CHECKLIST -->
-
       <article class="download-card">
         <h3>Checklist y reflexión personal</h3>
 
@@ -684,8 +668,7 @@
 
     </div>
 
-    <!-- KIT COMPLETO -->
-
+    <!-- KIT COMPLETO: ENLACE CORREGIDO -->
     <div class="kit-box">
       <h3>Descarga el kit completo</h3>
 
@@ -697,7 +680,7 @@
 
       <a
         class="button"
-        href="downloads/Healthy_Gaming_Habits_Kit_Imprimible%20%281%29.pdf
+        href="downloads/Healthy_Gaming_Habits_Kit_Imprimible%20%281%29.pdf"
         download>
         Descargar kit completo (PDF)
       </a>
@@ -709,7 +692,6 @@
   </section>
 
   <!-- MENSAJE PERSONAL -->
-
   <section>
     <h2>Un mensaje de Fernando</h2>
 
@@ -754,7 +736,6 @@
   </section>
 
   <!-- FORMULARIO DE CONTACTO -->
-
   <section id="contacto">
     <h2>Contacto y participación</h2>
 
@@ -770,12 +751,12 @@
     </p>
 
     <div class="contact-box">
-
       <form id="contactForm">
 
         <label for="nombre">
           Nombre (opcional)
         </label>
+
         <input
           type="text"
           id="nombre"
@@ -787,6 +768,7 @@
         <label for="correo">
           Correo electrónico (opcional)
         </label>
+
         <input
           type="email"
           id="correo"
@@ -798,22 +780,28 @@
         <label for="motivo">
           ¿Por qué deseas participar?
         </label>
+
         <select
           id="motivo"
           name="motivo"
           required>
+
           <option value="">
             Selecciona una opción
           </option>
+
           <option value="Compartir una idea">
             Compartir una idea
           </option>
+
           <option value="Hacer una pregunta">
             Hacer una pregunta
           </option>
+
           <option value="Compartir mi experiencia">
             Compartir mi experiencia
           </option>
+
           <option value="Conocer más sobre el proyecto">
             Conocer más sobre el proyecto
           </option>
@@ -822,6 +810,7 @@
         <label for="mensaje">
           Mensaje o comentario
         </label>
+
         <textarea
           id="mensaje"
           name="mensaje"
@@ -838,15 +827,11 @@
         </p>
 
         <div class="form-actions">
-          <button
-            class="button"
-            type="submit">
+          <button class="button" type="submit">
             Preparar mi mensaje
           </button>
 
-          <button
-            class="button"
-            type="reset">
+          <button class="button" type="reset">
             Limpiar formulario
           </button>
         </div>
@@ -868,6 +853,7 @@
         id="copyActions"
         class="form-actions"
         hidden>
+
         <button
           type="button"
           class="button"
@@ -941,8 +927,10 @@
 
     try {
       await navigator.clipboard.writeText(preparedMessage);
+
       formResult.textContent =
         "¡Mensaje copiado! Ahora puedes pegarlo donde desees.";
+
     } catch (error) {
       formResult.textContent =
         "No se pudo copiar automáticamente. Selecciona el texto de la vista previa y cópialo manualmente.";
